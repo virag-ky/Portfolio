@@ -1,0 +1,21 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$base-color1: #0c002e;
+$icon-color: #14ffff;
+
+@mixin center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin media-sm {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
