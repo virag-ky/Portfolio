@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+}
+
 $base-color1: #0c002e;
 $icon-color: #14ffff;
 
@@ -16,6 +20,12 @@ $icon-color: #14ffff;
 
 @mixin media-sm {
   @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media(min-width: 601px) and (max-width: 900px) {
     @content;
   }
 }

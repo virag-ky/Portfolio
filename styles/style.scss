@@ -1,10 +1,15 @@
 @import "base";
 
-.hidden {
+#menu {
   display: none;
 
   @include media-sm {
     display: block;
+    font-size: 1.8rem;
+    padding: 20px 15px;
+    position: absolute;
+    left: 0;
+    transition: .5s;
 
     &:hover {
       cursor: pointer;
@@ -14,30 +19,42 @@
 
 #side-nav {
   @include center;
+
   @include media-sm {
-    display: none;
+      position: absolute;
+      left: -200px;
+      width: 20%;
+      padding: 15px 0;
+  }
+
+  @include media-md {
+    padding: 25px 10px;
   }
 
   justify-content: flex-start;
   gap: 20%;
   background: $base-color1;
-  padding: 20px;
+  padding: 20px 10px;
   width: 15%;
-  max-width: 200px;
+  max-width: 120px;
   height: 100vh;
   position: fixed;
+  transition: .5s;
 
 
   #profile {
     border-radius: 50%;
-    width: 70%;
+    width: 100%;
   }
 
   ul {
     @include center;
+    @include media-sm {
+      height: 45%;
+    }
 
     width: 100%;
-    height: 60%;
+    height: 50%;
     justify-content: space-between;
 
     li {
@@ -47,13 +64,31 @@
         color: $icon-color;
 
         &:hover {
-          text-shadow: 0 0 40px $icon-color;
+          color: #ff1493;
+          text-shadow: 0 0 30px #fff;
         }
 
         i {
-          font-size: 2.5rem;
+          font-size: 2.3rem;
+
+          @include media-sm {
+            font-size: 1.5rem;
+          }
+
+          @include media-md {
+            font-size: 2rem;
+          }
         }
       }
     }
   }
+}
+
+#side-nav.hidden {
+  left: 0;
+}
+
+#menu.slide {
+  position: absolute;
+  left: 20%;
 }

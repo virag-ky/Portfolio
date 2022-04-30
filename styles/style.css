@@ -5,15 +5,27 @@
           box-sizing: border-box;
 }
 
-.hidden {
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menu {
   display: none;
 }
 
 @media (max-width: 600px) {
-  .hidden {
+  #menu {
     display: block;
+    font-size: 1.8rem;
+    padding: 20px 15px;
+    position: absolute;
+    left: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
-  .hidden:hover {
+  #menu:hover {
     cursor: pointer;
   }
 }
@@ -37,22 +49,33 @@
           justify-content: flex-start;
   gap: 20%;
   background: #0c002e;
-  padding: 20px;
+  padding: 20px 10px;
   width: 15%;
-  max-width: 200px;
+  max-width: 120px;
   height: 100vh;
   position: fixed;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media (max-width: 600px) {
   #side-nav {
-    display: none;
+    position: absolute;
+    left: -200px;
+    width: 20%;
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  #side-nav {
+    padding: 25px 10px;
   }
 }
 
 #side-nav #profile {
   border-radius: 50%;
-  width: 70%;
+  width: 100%;
 }
 
 #side-nav ul {
@@ -70,10 +93,16 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 60%;
+  height: 50%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  #side-nav ul {
+    height: 45%;
+  }
 }
 
 #side-nav ul li {
@@ -85,10 +114,32 @@
 }
 
 #side-nav ul li a:hover {
-  text-shadow: 0 0 40px #14ffff;
+  color: #ff1493;
+  text-shadow: 0 0 30px #fff;
 }
 
 #side-nav ul li a i {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+}
+
+@media (max-width: 600px) {
+  #side-nav ul li a i {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  #side-nav ul li a i {
+    font-size: 2rem;
+  }
+}
+
+#side-nav.hidden {
+  left: 0;
+}
+
+#menu.slide {
+  position: absolute;
+  left: 20%;
 }
 /*# sourceMappingURL=style.css.map */
