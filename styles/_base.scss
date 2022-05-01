@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -6,10 +9,13 @@
 
 body {
   display: flex;
+  position: relative;
 }
 
 $base-color1: #0c002e;
-$icon-color: #14ffff;
+$icon-color: #1495ff;
+$font1: 'Space Mono', monospace;
+$font2: 'Mulish', sans-serif;
 
 @mixin center {
   display: flex;
