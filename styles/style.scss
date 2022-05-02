@@ -39,7 +39,7 @@
   width: 15%;
   max-width: 120px;
   height: 100vh;
-  position: fixed;
+  position: sticky;
   z-index: 99;
   transition: .5s;
 
@@ -100,9 +100,9 @@
 }
 
 header {
-  position: absolute;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  border: solid white;
   background: url('../images/header-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
