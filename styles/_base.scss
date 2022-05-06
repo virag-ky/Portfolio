@@ -8,8 +8,8 @@
 }
 
 body {
-  display: flex;
   position: relative;
+  overflow-x: hidden;
 }
 
 $base-color1: #0c002e;

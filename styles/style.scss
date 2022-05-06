@@ -40,7 +40,7 @@
   width: 15%;
   max-width: 120px;
   height: 100vh;
-  position: sticky;
+  position: fixed;
   z-index: 99;
   transition: .5s;
 
@@ -104,11 +104,11 @@ header {
   @include center;
 
   height: 100vh;
-  width: 100vw;
   background: url('../images/header-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-left: 120px;
 
   @include media-sm {
     background-position: 15%;
@@ -204,6 +204,26 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+main {
+  margin-left: 120px;
+  #about-me {
+    padding: 80px 25px;
+    @include center;
+
+    h2 {
+      font-family: $font1;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: $font2;
     }
   }
 }

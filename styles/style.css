@@ -8,10 +8,8 @@
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
+  overflow-x: hidden;
 }
 
 #menu {
@@ -58,8 +56,7 @@ body {
   width: 15%;
   max-width: 120px;
   height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   z-index: 99;
   -webkit-transition: .5s;
   transition: .5s;
@@ -171,11 +168,11 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  width: 100vw;
   background: url("../images/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-left: 120px;
 }
 
 @media (max-width: 600px) {
@@ -315,5 +312,38 @@ header #nav-links ul li a:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+}
+
+main {
+  margin-left: 120px;
+}
+
+main #about-me {
+  padding: 80px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #about-me h2 {
+  font-family: "Space Mono", monospace;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+main #about-me p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Mulish", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
