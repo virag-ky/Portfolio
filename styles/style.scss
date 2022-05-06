@@ -40,7 +40,7 @@
   width: 15%;
   max-width: 120px;
   height: 100vh;
-  position: sticky;
+  position: fixed;
   z-index: 99;
   transition: .5s;
 
@@ -92,11 +92,12 @@
 }
 
 #side-nav.hidden {
+  position: fixed;
   left: 0;
 }
 
 #menu.slide {
-  position: absolute;
+  position: fixed;
   left: 20%;
 }
 
@@ -104,14 +105,19 @@ header {
   @include center;
 
   height: 100vh;
-  width: 100vw;
   background: url('../images/header-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-left: 110px;
 
   @include media-sm {
     background-position: 15%;
+    margin-left: 0;
+  }
+
+  @include media-md {
+    background-position: 25%;
   }
   
 
@@ -129,6 +135,10 @@ header {
 
       @include media-sm {
         font-size: 2rem;
+      }
+
+      @include media-md {
+        font-size: 3.5rem;
       }
     }
 
@@ -154,7 +164,6 @@ header {
     @include media-sm {
       @include center;
 
-      top: 80%;
       height: 180px;
       justify-content: flex-start;
     }
@@ -169,7 +178,7 @@ header {
 
       @include media-sm {
         gap: 25px;
-        background: rgba(12, 1, 71, 0.9);
+        background: rgba(12, 1, 71, 0.5);
         border-radius: 15px;
         padding: 10px 20px;
       }
@@ -179,7 +188,7 @@ header {
 
         a {
           color: #fff;
-          font-weight: 500;
+          font-weight: 700;
           text-decoration: none;
           border-radius: 15px;
           padding: 10px 20px;
@@ -203,6 +212,71 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+
+main {
+  @include center;
+
+  margin-left: 110px;
+  background: url('../images/main-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: flex-start;
+  padding-bottom: 80px;
+
+  @include media-sm {
+    margin-left: 0;
+  }
+
+
+  #about-me {
+    @include center;
+
+    height: 100vh;
+
+    @include media-sm {
+      height: auto;
+    }
+
+    h2 {
+      color: #fff;
+      text-shadow: 0 0 3px #fff;
+      font-family: $font1;
+      font-size: 2.8rem;
+      margin: 180px 0;
+
+      @include media-md {
+        font-size: 2.3rem;
+        margin-top: 50px;
+      }
+
+      @include media-sm {
+        font-size: 2rem;
+        margin-bottom: 100px;
+      }
+    }
+
+    p {
+      width: 80%;
+      text-align: center;
+      font-size: 1.8rem;
+      font-family: $font2;
+      color: #fff;
+      line-height: 2;
+      font-weight: 700;
+
+      @include media-md {
+        font-size: 1.5rem;
+        width: 90%;
+      }
+
+      @include media-sm {
+        width: 92%;
+        font-size: 1.2rem;
       }
     }
   }
