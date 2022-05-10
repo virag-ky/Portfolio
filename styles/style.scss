@@ -155,10 +155,10 @@ header {
 
   #nav-links {
     position: absolute;
-    top: 10%;
+    top: 5%;
     width: 40%;
     max-width: 500px;
-    font-family: $font2;
+    font-family: $font1;
     font-size: 1.5rem;
 
     @include media-sm {
@@ -188,7 +188,6 @@ header {
 
         a {
           color: #fff;
-          font-weight: 700;
           text-decoration: none;
           border-radius: 15px;
           padding: 10px 20px;
@@ -243,21 +242,7 @@ main {
     }
 
     h2 {
-      color: #fff;
-      text-shadow: 0 0 3px #fff;
-      font-family: $font1;
-      font-size: 2.8rem;
-      margin: 180px 0;
-
-      @include media-md {
-        font-size: 2.3rem;
-        margin-top: 50px;
-      }
-
-      @include media-sm {
-        font-size: 2rem;
-        margin-bottom: 100px;
-      }
+      @include sub-title;
     }
 
     p {
@@ -278,6 +263,48 @@ main {
         width: 92%;
         font-size: 1.2rem;
       }
+    }
+  }
+
+  #projects {
+    @include center;
+
+    height: 100vh;
+
+    h2 {
+      @include sub-title;
+    }
+
+    nav {
+     @include projects-div;
+
+     margin-bottom: 50px;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          font-family: $font1;
+          font-size: 1.2rem;
+          list-style: none;
+
+          a {
+            color: $icon-color;
+            text-shadow:  0 0 5px $icon-color;
+            text-decoration: none;
+
+            &:hover {
+              color: #f65ee0;
+              text-shadow:  0 0 10px #f65ee0;
+            }
+          }
+        }
+      }
+    }
+
+    #main-div {
+      @include projects-div;
     }
   }
 }
