@@ -291,12 +291,12 @@ main {
 
           a {
             color: $icon-color;
-            text-shadow:  0 0 5px $icon-color;
             text-decoration: none;
 
             &:hover {
               color: #f65ee0;
-              text-shadow:  0 0 10px #f65ee0;
+              text-shadow: 0 0 10px #f65ee0;
+              cursor: pointer;
             }
           }
         }

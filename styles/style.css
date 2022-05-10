@@ -495,13 +495,13 @@ main #projects nav ul li {
 
 main #projects nav ul li a {
   color: #1495ff;
-  text-shadow: 0 0 5px #1495ff;
   text-decoration: none;
 }
 
 main #projects nav ul li a:hover {
   color: #f65ee0;
   text-shadow: 0 0 10px #f65ee0;
+  cursor: pointer;
 }
 
 main #projects #main-div {
