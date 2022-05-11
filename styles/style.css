@@ -240,10 +240,10 @@ header #name h2 {
 
 header #nav-links {
   position: absolute;
-  top: 10%;
+  top: 5%;
   width: 40%;
   max-width: 500px;
-  font-family: "Mulish", sans-serif;
+  font-family: "Space Mono", monospace;
   font-size: 1.5rem;
 }
 
@@ -299,7 +299,6 @@ header #nav-links ul li {
 
 header #nav-links ul li a {
   color: #fff;
-  font-weight: 700;
   text-decoration: none;
   border-radius: 15px;
   padding: 10px 20px;
@@ -387,6 +386,7 @@ main #about-me h2 {
   font-family: "Space Mono", monospace;
   font-size: 2.8rem;
   margin: 180px 0;
+  letter-spacing: 3px;
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
@@ -425,5 +425,92 @@ main #about-me p {
     width: 92%;
     font-size: 1.2rem;
   }
+}
+
+main #projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+main #projects h2 {
+  color: #fff;
+  text-shadow: 0 0 3px #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 2.8rem;
+  margin: 180px 0;
+  letter-spacing: 3px;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  main #projects h2 {
+    font-size: 2.3rem;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  main #projects h2 {
+    font-size: 2rem;
+    margin-bottom: 100px;
+  }
+}
+
+main #projects nav {
+  padding: 20px 25px;
+  border-radius: 30px;
+  width: 70vw;
+  max-width: 1600px;
+  background: rgba(250, 250, 250, 0.1);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  margin-bottom: 50px;
+}
+
+main #projects nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #projects nav ul li {
+  font-family: "Space Mono", monospace;
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+main #projects nav ul li a {
+  color: #1495ff;
+  text-decoration: none;
+}
+
+main #projects nav ul li a:hover {
+  color: #f65ee0;
+  text-shadow: 0 0 10px #f65ee0;
+  cursor: pointer;
+}
+
+main #projects #main-div {
+  padding: 20px 25px;
+  border-radius: 30px;
+  width: 70vw;
+  max-width: 1600px;
+  background: rgba(250, 250, 250, 0.1);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 /*# sourceMappingURL=style.css.map */
