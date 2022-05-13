@@ -7,6 +7,7 @@ const cssArtProjects = [
     languagesTools: ["HTML", "CSS"],
     liveUrl: "https://virag-ky.github.io/CSS-Color-Markers/",
     githubUrl: "https://github.com/virag-ky/CSS-Color-Markers",
+    id: 5,
   },
   {
     title: "CSS Penguins",
@@ -16,6 +17,7 @@ const cssArtProjects = [
     languagesTools: ["HTML", "CSS"],
     liveUrl: "https://virag-ky.github.io/CSS-Penguins/",
     githubUrl: "https://github.com/virag-ky/CSS-Penguins",
+    id: 6,
   },
   {
     title: "City Skyline",
@@ -25,6 +27,7 @@ const cssArtProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox", "JavaScript"],
     liveUrl: "https://virag-ky.github.io/City-Skyline/",
     githubUrl: "https://github.com/virag-ky/City-Skyline",
+    id: 7,
   },
 ];
 

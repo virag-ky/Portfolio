@@ -7,6 +7,7 @@ const gameProjects = [
     languagesTools: ["HTML", "CSS", "Grid", "Flexbox", "JavaScript"],
     liveUrl: "https://virag-ky.github.io/etch-a-sketch/",
     githubUrl: "https://github.com/virag-ky/etch-a-sketch",
+    id: 8,
   },
   {
     title: "Leaderboard",
@@ -16,6 +17,7 @@ const gameProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox", "JavaScript", "Webpack"],
     liveUrl: "https://virag-ky.github.io/Leaderboard/",
     githubUrl: "https://github.com/virag-ky/Leaderboard",
+    id: 9,
   },
   {
     title: "Rock Paper Scissors",
@@ -25,6 +27,7 @@ const gameProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox", "JavaScript"],
     liveUrl: "https://virag-ky.github.io/Rock-paper-scissor/",
     githubUrl: "https://github.com/virag-ky/Rock-paper-scissor",
+    id: 10,
   },
 ];
 

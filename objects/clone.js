@@ -7,6 +7,7 @@ const cloneProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Google-homepage/",
     githubUrl: "https://github.com/virag-ky/Google-homepage",
+    id: 2,
   },
   {
     title: "Youtube",
@@ -16,6 +17,7 @@ const cloneProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox", "Grid"],
     liveUrl: "https://virag-ky.github.io/Youtube-Clone/",
     githubUrl: "https://github.com/virag-ky/Youtube-Clone",
+    id: 3,
   },
   {
     title: "Virag's Web Development Course",
@@ -25,6 +27,7 @@ const cloneProjects = [
     languagesTools: ["HTML", "Sass", "JavaScript"],
     liveUrl: "https://virag-ky.github.io/Capstone-Web-Development-Course/",
     githubUrl: "https://github.com/virag-ky/Capstone-Web-Development-Course",
+    id: 4,
   },
 ];
 

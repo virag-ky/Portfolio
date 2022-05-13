@@ -7,6 +7,7 @@ const toolProjects = [
     languagesTools: ["HTML", "CSS", "Grid", "Flexbox", "JavaScript"],
     liveUrl: "https://virag-ky.github.io/calculator/",
     githubUrl: "https://github.com/virag-ky/calculator",
+    id: 21,
   },
   {
     title: "To-Do List",
@@ -16,6 +17,7 @@ const toolProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox", "JavaScript", "Webpack"],
     liveUrl: "https://virag-ky.github.io/To-Do-List/",
     githubUrl: "https://github.com/virag-ky/To-Do-List",
+    id: 22,
   },
   {
     title: "Programming Book List",
@@ -25,6 +27,7 @@ const toolProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox", "JavaScript"],
     liveUrl: "https://virag-ky.github.io/Library-Odin-Project/",
     githubUrl: "https://github.com/virag-ky/Library-Odin-Project",
+    id: 23,
   },
 ];
 

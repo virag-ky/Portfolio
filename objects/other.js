@@ -7,6 +7,7 @@ const otherProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Balance-Sheet/",
     githubUrl: "https://github.com/virag-ky/Balance-Sheet",
+    id: 11,
   },
   {
     title: "Cafe Menu",
@@ -16,6 +17,7 @@ const otherProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Mini-project-Coffee-Menu/",
     githubUrl: "https://github.com/virag-ky/Mini-project-Coffee-Menu",
+    id: 12,
   },
   {
     title: "Landing Page",
@@ -25,6 +27,7 @@ const otherProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Electric-car-landing-page/",
     githubUrl: "https://github.com/virag-ky/Electric-car-landing-page",
+    id: 13,
   },
   {
     title: "HTML-CSS Quiz",
@@ -34,6 +37,7 @@ const otherProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/HTML-CSS-Quiz/",
     githubUrl: "https://github.com/virag-ky/HTML-CSS-Quiz",
+    id: 14,
   },
   {
     title: "Magazine",
@@ -42,6 +46,7 @@ const otherProjects = [
     languagesTools: ["HTML", "CSS", "Grid", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Magazine/",
     githubUrl: "https://github.com/virag-ky/Magazine",
+    id: 15,
   },
   {
     title: "Nutrition Label",
@@ -50,6 +55,7 @@ const otherProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Nutrition-Label/",
     githubUrl: "https://github.com/virag-ky/Nutrition-Label",
+    id: 16,
   },
   {
     title: "Odin Recipes",
@@ -59,6 +65,7 @@ const otherProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Odin-Recipes/",
     githubUrl: "https://github.com/virag-ky/Odin-Recipes",
+    id: 17,
   },
   {
     title: "Registration Form",
@@ -68,6 +75,7 @@ const otherProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Registration-Form/",
     githubUrl: "https://github.com/virag-ky/Registration-Form",
+    id: 18,
   },
   {
     title: "Tribute Page - Marilyn Monroe",
@@ -76,6 +84,7 @@ const otherProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Tribute-page--Marilyn_Monroe/",
     githubUrl: "https://github.com/virag-ky/Tribute-page--Marilyn_Monroe",
+    id: 19,
   },
   {
     title: "Technical Documentation Page",
@@ -84,6 +93,7 @@ const otherProjects = [
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Technical_documentation_page/",
     githubUrl: "https://github.com/virag-ky/Technical_documentation_page",
+    id: 20,
   },
 ];
 

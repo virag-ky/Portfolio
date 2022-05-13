@@ -10,6 +10,8 @@ window.onload = () => {
   const sideNav = document.getElementById("side-nav");
   const projectsSection = document.getElementById("main-div");
   const projectsNavbar = [...document.getElementsByClassName("projects-nav")];
+  const navProjects = document.getElementById("projects-navbar");
+  const projectsHeading = document.getElementById("projects-heading");
 
   menu.addEventListener("click", () => {
     sideNav.classList.toggle("hidden");
@@ -20,19 +22,24 @@ window.onload = () => {
     projectsSection.innerHTML = "";
     for (let i = 0; i < currentProjects.length; i += 1) {
       const projectsDiv = document.createElement("div");
-      for (let j = 0; j < currentProjects[i].languagesTools.length; j += 1) {
-        projectsDiv.innerHTML = `
-  <img src=${currentProjects[i].image} alt="project">
+      projectsDiv.setAttribute("class", "project");
+      projectsDiv.innerHTML = `
+  <img src=${currentProjects[i].image} alt="project" id="image-${currentProjects[i].id}">
   <h3>${currentProjects[i].title}</h3>
-  <p class="description">${currentProjects[i].description}</p>
-  <div class="languages-tools">
-  <span>${currentProjects[i].languagesTools}</span>
-  </div>
-  <button><a href=${currentProjects[i].liveUrl} target="_blank">See Project</a></button>
-  <button><a href=${currentProjects[i].githubUrl} target="_blank">Github Repo</a></button>
+  <div class="languages-tools"></div>
+  <button class='see-project'>See Project</button>
   `;
+
+      for (let j = 0; j < currentProjects[i].languagesTools.length; j += 1) {
+        const span = document.createElement("span");
+        span.innerText = currentProjects[i].languagesTools[j];
+
+        const languagesToolsDiv = [
+          ...document.getElementsByClassName("languages-tools"),
+        ];
+        languagesToolsDiv.forEach((div) => div.appendChild(span));
+        projectsSection.appendChild(projectsDiv);
       }
-      projectsSection.appendChild(projectsDiv);
     }
   };
 
@@ -41,24 +48,76 @@ window.onload = () => {
       switch (e.target.innerText) {
         case "Clone":
           createProjects(cloneProjects);
+          seeProjects(cloneProjects);
           break;
         case "Games":
           createProjects(gameProjects);
+          seeProjects(gameProjects);
           break;
         case "Tools":
           createProjects(toolProjects);
+          seeProjects(toolProjects);
           break;
         case "CSS Art":
           createProjects(cssArtProjects);
+          seeProjects(cssArtProjects);
           break;
         case "Other":
           createProjects(otherProjects);
+          seeProjects(otherProjects);
           break;
         case "API":
           createProjects(apiProjects);
+          seeProjects(apiProjects);
           break;
       }
     })
   );
-  createProjects(apiProjects);
+
+  createProjects(otherProjects);
+
+  const seeProjects = (currentProject) => {
+    const seeProjectBtn = [...document.querySelectorAll(".see-project")];
+
+    seeProjectBtn.forEach((button, i) =>
+      button.addEventListener("click", () => {
+        const popUp = document.createElement("div");
+        popUp.classList.add("popup");
+        popUp.innerHTML = `<button class="exit"><i class="fas fa-times"></i></button>
+        <img src=${currentProject[i].image} alt="project" id="image-${currentProject[i].id}">
+        <h2 class="popup-h2">${currentProject[i].title}</h2>
+        <p>${currentProject[i].description}</p>
+        <div class="buttons-div">
+        <button><a href=${currentProject[i].liveUrl} target="_blank">See Live</a></button>
+        <button><a href=${currentProject[i].githubUrl} target="_blank">See Repository</a></button>
+        </div>
+        `;
+
+        const mainSection = document.querySelector("main");
+        mainSection.appendChild(popUp);
+
+        document.body.style.overflowY = "hidden";
+        sideNav.style.visibility = "hidden";
+        projectsSection.style.visibility = "hidden";
+        navProjects.style.visibility = "hidden";
+        projectsHeading.style.visibility = "hidden";
+        mainSection.classList.toggle("margin-zero");
+
+        const exitBtn = [...document.querySelectorAll(".exit")];
+
+        for (let k = 0; k < exitBtn.length; k += 1) {
+          exitBtn[k].addEventListener("click", () => {
+            popUp.remove();
+            document.body.style.overflowY = "scroll";
+            projectsSection.style.visibility = "visible";
+            sideNav.style.visibility = "visible";
+            navProjects.style.visibility = "visible";
+            projectsHeading.style.visibility = "visible";
+            mainSection.classList.toggle("margin-zero");
+          });
+        }
+      })
+    );
+  };
+  seeProjects(otherProjects);
 };
