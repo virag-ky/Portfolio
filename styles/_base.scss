@@ -69,3 +69,21 @@ $font2: 'Mulish', sans-serif;
       background: rgba(240, 238, 243, 0.3);
       backdrop-filter: blur(3px);
 }
+
+@mixin image-fit {
+  #image-1 {
+    object-position: 15%;
+  }
+
+  #image-23 {
+    object-position: 45%;
+  }
+
+  #image-3, #image-4 {
+    object-position: left top;
+  }
+
+  #image-9 {
+    object-position: 8%;
+  }
+}

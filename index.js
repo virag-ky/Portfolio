@@ -10,6 +10,7 @@ window.onload = () => {
   const sideNav = document.getElementById("side-nav");
   const projectsSection = document.getElementById("main-div");
   const projectsNavbar = [...document.getElementsByClassName("projects-nav")];
+  const navProjects = document.getElementById("projects-navbar");
 
   menu.addEventListener("click", () => {
     sideNav.classList.toggle("hidden");
@@ -46,27 +47,27 @@ window.onload = () => {
       switch (e.target.innerText) {
         case "Clone":
           createProjects(cloneProjects);
-          seeProjects();
+          seeProjects(cloneProjects);
           break;
         case "Games":
           createProjects(gameProjects);
-          seeProjects();
+          seeProjects(gameProjects);
           break;
         case "Tools":
           createProjects(toolProjects);
-          seeProjects();
+          seeProjects(toolProjects);
           break;
         case "CSS Art":
           createProjects(cssArtProjects);
-          seeProjects();
+          seeProjects(cssArtProjects);
           break;
         case "Other":
           createProjects(otherProjects);
-          seeProjects();
+          seeProjects(otherProjects);
           break;
         case "API":
           createProjects(apiProjects);
-          seeProjects();
+          seeProjects(apiProjects);
           break;
       }
     })
@@ -74,14 +75,20 @@ window.onload = () => {
 
   createProjects(otherProjects);
 
-  const seeProjects = () => {
+  const seeProjects = (currentProject) => {
     const seeProjectBtn = [...document.querySelectorAll(".see-project")];
 
-    seeProjectBtn.forEach((button) =>
+    seeProjectBtn.forEach((button, i) =>
       button.addEventListener("click", () => {
         const popUp = document.createElement("div");
         popUp.classList.add("popup");
-        popUp.innerHTML = `<button class="exit"><i class="fas fa-times"></i></button>`;
+        popUp.innerHTML = `<button class="exit"><i class="fas fa-times"></i></button>
+        <img src=${currentProject[i].image} alt="project" id="image-${currentProject[i].id}" class="popup-image">
+        <h2 class="popup-h2">${currentProject[i].title}</h2>
+        <p>${currentProject[i].description}</p>
+        <button class="live-btn"><a href=${currentProject[i].liveUrl} target="_blank">See Live</a></button>
+        <button class="github-btn"><a href=${currentProject[i].githubUrl} target="_blank">See Repository</a></button>
+        `;
 
         const mainSection = document.querySelector("main");
         mainSection.appendChild(popUp);
@@ -89,6 +96,7 @@ window.onload = () => {
         document.body.style.overflowY = "hidden";
         sideNav.style.visibility = "hidden";
         projectsSection.style.visibility = "hidden";
+        navProjects.style.visibility = "hidden";
         mainSection.classList.toggle("margin-zero");
 
         const exitBtn = [...document.querySelectorAll(".exit")];
@@ -99,11 +107,12 @@ window.onload = () => {
             document.body.style.overflowY = "scroll";
             projectsSection.style.visibility = "visible";
             sideNav.style.visibility = "visible";
+            navProjects.style.visibility = "visible";
             mainSection.classList.toggle("margin-zero");
           });
         }
       })
     );
   };
-  seeProjects();
+  seeProjects(otherProjects);
 };
