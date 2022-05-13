@@ -20,19 +20,24 @@ window.onload = () => {
     projectsSection.innerHTML = "";
     for (let i = 0; i < currentProjects.length; i += 1) {
       const projectsDiv = document.createElement("div");
-      for (let j = 0; j < currentProjects[i].languagesTools.length; j += 1) {
-        projectsDiv.innerHTML = `
-  <img src=${currentProjects[i].image} alt="project">
+      projectsDiv.setAttribute("class", "project");
+      projectsDiv.innerHTML = `
+  <img src=${currentProjects[i].image} alt="project" id="image-${currentProjects[i].id}">
   <h3>${currentProjects[i].title}</h3>
-  <p class="description">${currentProjects[i].description}</p>
-  <div class="languages-tools">
-  <span>${currentProjects[i].languagesTools}</span>
-  </div>
-  <button><a href=${currentProjects[i].liveUrl} target="_blank">See Project</a></button>
-  <button><a href=${currentProjects[i].githubUrl} target="_blank">Github Repo</a></button>
+  <div class="languages-tools"></div>
+  <button class='see-project'>See Project</button>
   `;
+
+      for (let j = 0; j < currentProjects[i].languagesTools.length; j += 1) {
+        const span = document.createElement("span");
+        span.innerText = currentProjects[i].languagesTools[j];
+
+        const languagesToolsDiv = [
+          ...document.getElementsByClassName("languages-tools"),
+        ];
+        languagesToolsDiv.forEach((div) => div.appendChild(span));
+        projectsSection.appendChild(projectsDiv);
       }
-      projectsSection.appendChild(projectsDiv);
     }
   };
 
@@ -60,5 +65,5 @@ window.onload = () => {
       }
     })
   );
-  createProjects(apiProjects);
+  createProjects(otherProjects);
 };

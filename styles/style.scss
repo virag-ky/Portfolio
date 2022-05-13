@@ -1,9 +1,35 @@
 @import "base";
 
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  background: $base-color1;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $icon-color; 
+  border-radius: 10px;
+  background: $base-color1;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: $icon-color; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f65ee0; 
+}
+
 #menu {
   display: none;
 
-  @include media-sm {
+  @include media-sx {
     display: block;
     color: #fff;
     font-size: 1.8rem;
@@ -12,6 +38,7 @@
     top: 0;
     left: 0;
     transition: .5s;
+    z-index: 99;
 
     &:hover {
       cursor: pointer;
@@ -22,14 +49,14 @@
 #side-nav {
   @include center;
 
-  @include media-sm {
+  @include media-sx {
       position: absolute;
       left: -200px;
       width: 15%;
       padding: 15px 0;
   }
 
-  @include media-md {
+  @include media-sm {
     padding: 25px 10px;
   }
 
@@ -49,14 +76,14 @@
     border-radius: 50%;
     width: 100%;
 
-    @include media-sm {
+    @include media-sx {
       width: 70%;
     }
   }
 
   ul {
     @include center;
-    @include media-sm {
+    @include media-sx {
       height: 45%;
     }
 
@@ -78,11 +105,11 @@
         i {
           font-size: 2.3rem;
 
-          @include media-sm {
+          @include media-sx {
             font-size: 1.5rem;
           }
 
-          @include media-md {
+          @include media-sm {
             font-size: 2rem;
           }
         }
@@ -111,12 +138,12 @@ header {
   background-position: center;
   margin-left: 110px;
 
-  @include media-sm {
+  @include media-sx {
     background-position: 15%;
     margin-left: 0;
   }
 
-  @include media-md {
+  @include media-sm {
     background-position: 25%;
   }
   
@@ -133,11 +160,11 @@ header {
       color: #fff;
       text-shadow: 5px 0 30px #000;
 
-      @include media-sm {
+      @include media-sx {
         font-size: 2rem;
       }
 
-      @include media-md {
+      @include media-sm {
         font-size: 3.5rem;
       }
     }
@@ -147,7 +174,7 @@ header {
       color: #fff;
       font-size: 2rem;
 
-      @include media-sm {
+      @include media-sx {
         font-size: 1.2rem;
       }
     }
@@ -155,28 +182,29 @@ header {
 
   #nav-links {
     position: absolute;
-    top: 5%;
+    top: 3%;
     width: 40%;
     max-width: 500px;
     font-family: $font1;
     font-size: 1.5rem;
 
-    @include media-sm {
+    @include media-sx {
       @include center;
 
+      top: 2%;
       height: 180px;
       justify-content: flex-start;
     }
 
-    @include media-md {
-      width: 50%;
+    @include media-sm {
+      width: 60%;
     }
 
     ul {
       display: flex;
       justify-content: space-between;
 
-      @include media-sm {
+      @include media-sx {
         gap: 25px;
         background: rgba(12, 1, 71, 0.5);
         border-radius: 15px;
@@ -196,10 +224,10 @@ header {
           &:hover {
             color: $icon-color;
             text-shadow: 0 0 10px $icon-color;
-            box-shadow: 0 0 10px $icon-color;
+            box-shadow: 0 0 10px #fff;
           }
 
-          @include media-sm {
+          @include media-sx {
             font-size: 1.1rem;
             background: transparent;
             text-shadow: 0 0 10px #fff;
@@ -227,8 +255,12 @@ main {
   justify-content: flex-start;
   padding-bottom: 80px;
 
-  @include media-sm {
+  @include media-sx {
     margin-left: 0;
+  }
+
+  @include media-sm {
+    margin-left: 88px;
   }
 
 
@@ -237,7 +269,7 @@ main {
 
     height: 100vh;
 
-    @include media-sm {
+    @include media-sx {
       height: auto;
     }
 
@@ -254,12 +286,12 @@ main {
       line-height: 2;
       font-weight: 700;
 
-      @include media-md {
+      @include media-sm {
         font-size: 1.5rem;
         width: 90%;
       }
 
-      @include media-sm {
+      @include media-sx {
         width: 92%;
         font-size: 1.2rem;
       }
@@ -269,7 +301,7 @@ main {
   #projects {
     @include center;
 
-    height: 100vh;
+    min-height: 100vh;
 
     h2 {
       @include sub-title;
@@ -278,24 +310,48 @@ main {
     nav {
      @include projects-div;
 
+     width: 70%;
      margin-bottom: 50px;
+
+     @include media-sm {
+       width: 100%;
+     }
+
+     @include media-sx {
+       width: 80%;
+       padding: 15px;
+     }
 
       ul {
         display: flex;
         justify-content: space-between;
+
+        @include media-sx {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+        }
 
         li {
           font-family: $font1;
           font-size: 1.2rem;
           list-style: none;
 
+          @include media-sm {
+            font-size: 1rem;
+          }
+
+          @include media-sx {
+            font-size: 1rem;
+          }
+
           a {
-            color: $icon-color;
+            color: #fff;
             text-decoration: none;
 
             &:hover {
-              color: #f65ee0;
-              text-shadow: 0 0 10px #f65ee0;
+              color: $icon-color;
+              text-shadow: 0 0 10px $icon-color;
               cursor: pointer;
             }
           }
@@ -305,6 +361,160 @@ main {
 
     #main-div {
       @include projects-div;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 50px;
+      justify-items: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width: 90vw;
+      max-width: 1800px;
+
+      @include media-md {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80vw;
+        max-width: 1200px;
+      }
+
+      @include media-sm {
+        grid-template-columns: 1fr;
+        width: 70vw;
+        max-width: 600px;
+      }
+
+      @include media-sx {
+        grid-template-columns: 1fr;
+        width: 75vw;
+        max-width: 500px;
+      }
+
+      .project {
+        background: #fff;
+        padding: 20px 20px 30px 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+        @include media-sx {
+          padding: 15px 15px 20px 15px;
+          gap: 20px;
+        }
+
+        img {
+          width: 500px;
+          height: 500px;
+          object-fit:cover;
+          object-position: top;
+          border-radius: 20px;
+
+          @include media-md {
+            width: 420px;
+            height: 420px;
+          }
+
+          @include media-sm {
+            width: 350px;
+            height: 350px;
+          }
+
+          @include media-sx {
+            width: 250px;
+            height: 250px;
+          }
+        }
+
+        #image-1 {
+          object-position: 15%;
+        }
+
+        #image-23 {
+          object-position: 45%;
+        }
+
+        #image-3, #image-4 {
+          object-position: left;
+        }
+
+        #image-9 {
+          object-position: 8%;
+        }
+
+        h3 {
+          font-family: $font1;
+          font-size: 1.5rem;
+
+          @include media-md {
+            font-size: 1.3rem;
+          }
+
+          @include media-sm {
+            font-size: 1.2rem;
+          }
+
+          @include media-sx {
+            font-size: 0.9rem;
+            text-align: center;
+          }
+        }
+
+        .languages-tools {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 10px;
+
+          span {
+            font-size: 1.1rem;
+            font-family: $font2;
+            background: rgba(26, 2, 105, 0.1);
+            border-radius: 20px;
+            width: 32%;
+            padding: 10px 0;
+            text-align: center;
+
+            @include media-md {
+              width: 25%;
+              font-size: 1rem;
+            }
+
+            @include media-sm {
+              font-size: 0.9rem;
+            }
+
+            @include media-sx {
+              font-size: 0.7rem;
+            }
+          }
+        }
+
+        .see-project {
+          width: 100%;
+          border-radius: 20px;
+          padding: 10px;
+          font-size: 1.2rem;
+          font-family: $font2;
+          font-weight: 700;
+          border: none;
+          background: transparent;
+          box-shadow: 0 3px 3px rgba(1, 1, 90, 0.5);
+
+          @include media-sx {
+            font-size: 0.9rem;
+          }
+
+          &:hover {
+            cursor: pointer;
+            background: transparent;
+            box-shadow: 0 0 20px rgb(1, 1, 63);
+          }
+        }
+      }
     }
   }
 }
