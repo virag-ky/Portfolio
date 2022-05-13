@@ -46,24 +46,64 @@ window.onload = () => {
       switch (e.target.innerText) {
         case "Clone":
           createProjects(cloneProjects);
+          seeProjects();
           break;
         case "Games":
           createProjects(gameProjects);
+          seeProjects();
           break;
         case "Tools":
           createProjects(toolProjects);
+          seeProjects();
           break;
         case "CSS Art":
           createProjects(cssArtProjects);
+          seeProjects();
           break;
         case "Other":
           createProjects(otherProjects);
+          seeProjects();
           break;
         case "API":
           createProjects(apiProjects);
+          seeProjects();
           break;
       }
     })
   );
+
   createProjects(otherProjects);
+
+  const seeProjects = () => {
+    const seeProjectBtn = [...document.querySelectorAll(".see-project")];
+
+    seeProjectBtn.forEach((button) =>
+      button.addEventListener("click", () => {
+        const popUp = document.createElement("div");
+        popUp.classList.add("popup");
+        popUp.innerHTML = `<button class="exit"><i class="fas fa-times"></i></button>`;
+
+        const mainSection = document.querySelector("main");
+        mainSection.appendChild(popUp);
+
+        document.body.style.overflowY = "hidden";
+        sideNav.style.visibility = "hidden";
+        projectsSection.style.visibility = "hidden";
+        mainSection.classList.toggle("margin-zero");
+
+        const exitBtn = [...document.querySelectorAll(".exit")];
+
+        for (let k = 0; k < exitBtn.length; k += 1) {
+          exitBtn[k].addEventListener("click", () => {
+            popUp.remove();
+            document.body.style.overflowY = "scroll";
+            projectsSection.style.visibility = "visible";
+            sideNav.style.visibility = "visible";
+            mainSection.classList.toggle("margin-zero");
+          });
+        }
+      })
+    );
+  };
+  seeProjects();
 };

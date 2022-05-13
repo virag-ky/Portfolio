@@ -518,3 +518,29 @@ main {
     }
   }
 }
+
+.popup {
+  width: 80vw;
+  height: 90vh;
+  background-color: #f3f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  border-radius: 20px;
+}
+
+.exit {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.margin-zero {
+  margin-left: 0;
+}
