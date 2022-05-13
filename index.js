@@ -11,6 +11,7 @@ window.onload = () => {
   const projectsSection = document.getElementById("main-div");
   const projectsNavbar = [...document.getElementsByClassName("projects-nav")];
   const navProjects = document.getElementById("projects-navbar");
+  const projectsHeading = document.getElementById("projects-heading");
 
   menu.addEventListener("click", () => {
     sideNav.classList.toggle("hidden");
@@ -83,11 +84,13 @@ window.onload = () => {
         const popUp = document.createElement("div");
         popUp.classList.add("popup");
         popUp.innerHTML = `<button class="exit"><i class="fas fa-times"></i></button>
-        <img src=${currentProject[i].image} alt="project" id="image-${currentProject[i].id}" class="popup-image">
+        <img src=${currentProject[i].image} alt="project" id="image-${currentProject[i].id}">
         <h2 class="popup-h2">${currentProject[i].title}</h2>
         <p>${currentProject[i].description}</p>
-        <button class="live-btn"><a href=${currentProject[i].liveUrl} target="_blank">See Live</a></button>
-        <button class="github-btn"><a href=${currentProject[i].githubUrl} target="_blank">See Repository</a></button>
+        <div class="buttons-div">
+        <button><a href=${currentProject[i].liveUrl} target="_blank">See Live</a></button>
+        <button><a href=${currentProject[i].githubUrl} target="_blank">See Repository</a></button>
+        </div>
         `;
 
         const mainSection = document.querySelector("main");
@@ -97,6 +100,7 @@ window.onload = () => {
         sideNav.style.visibility = "hidden";
         projectsSection.style.visibility = "hidden";
         navProjects.style.visibility = "hidden";
+        projectsHeading.style.visibility = "hidden";
         mainSection.classList.toggle("margin-zero");
 
         const exitBtn = [...document.querySelectorAll(".exit")];
@@ -108,6 +112,7 @@ window.onload = () => {
             projectsSection.style.visibility = "visible";
             sideNav.style.visibility = "visible";
             navProjects.style.visibility = "visible";
+            projectsHeading.style.visibility = "visible";
             mainSection.classList.toggle("margin-zero");
           });
         }

@@ -9,6 +9,10 @@
 ::-webkit-scrollbar {
   width: 20px;
   background: $base-color1;
+
+  @include media-sx {
+    width: 10px;
+  }
 }
 
 ::-webkit-scrollbar-track {
@@ -385,7 +389,7 @@ main {
 
       @include media-sx {
         grid-template-columns: 1fr;
-        width: 75vw;
+        width: 90vw;
         max-width: 500px;
       }
 
@@ -508,7 +512,7 @@ main {
 .popup {
   width: 80vw;
   height: 90vh;
-  padding: 30px 50px 50px 50px;
+  padding: 30px 80px 50px 80px;
   background: rgba(255, 255, 255, 0.1);
   position: fixed;
   top: 50%;
@@ -518,11 +522,33 @@ main {
   border-radius: 20px;
   overflow-y: scroll;
 
+  @include center;
+
+  justify-content: space-between;
+  gap: 100px;
+
+  @include media-sm {
+    padding: 100px 30px 50px 30px;
+    gap: 50px;
+  }
+
+  @include media-sx {
+    padding: 80px 30px 20px 30px;
+    height: 80vh;
+    width: 90vw;
+    gap: 30px;
+  }
+
   .exit {
     position: absolute;
-    right: 5%;
+    top: 5%;
+    right: 2%;
     background: transparent;
     border: none;
+
+    @include media-sx {
+      right: 5%;
+    }
   
     &:hover {
       cursor: pointer;
@@ -531,16 +557,106 @@ main {
     i {
       font-size: 3rem;
       color: #fff;
+
+      @include media-sx {
+        font-size: 2rem;
+      }
     }
   }
 
-  .popup-image {
-    margin-top: 80px;
-    border-radius: 20px;
+  img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+
+    @include media-sx {
+      height: 50%;
+      object-fit: cover;
+    }
   }  
+
+  .popup-h2 {
+    color: #fff;
+    font-family: $font1;
+    font-size: 3rem;
+
+    @include media-sm {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    @include media-sx {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+
+  p {
+    color: #fff;
+    font-family: $font2;
+    font-size: 2rem;
+    text-align: center;
+
+    @include media-sm {
+      font-size: 1.5rem;
+    }
+
+    @include media-sx {
+      font-size: 1.1rem;
+    }
+  }
+
+  .buttons-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    @include media-sx {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+  button {
+    width: 20%;
+    font-family: $font2;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 20px;
+
+    @include media-sm {
+      width: 30%;
+      font-size: 1rem;
+    }
+
+    @include media-md {
+      width: 25%;
+    }
+
+    @include media-sx {
+      width: 65%;
+      font-size: 0.9rem;
+      padding: 5px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: $base-color1;
+      outline: 1px solid $icon-color;
+      box-shadow:  0 0 5px $icon-color;
+      
+    }
+
+    a {
+      text-decoration: none;
+      color: $icon-color;
+    }
+  }
+}
 }
 
 .margin-zero {
