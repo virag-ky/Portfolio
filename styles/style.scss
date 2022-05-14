@@ -690,8 +690,8 @@ main {
   }
 
   @include media-sx {
-    padding: 80px 30px 40px 30px;
-    height: 70vh;
+    padding: 60px 20px 40px 20px;
+    height: 75vh;
     width: 90vw;
     gap: 30px;
   }
@@ -731,7 +731,8 @@ main {
     object-fit: contain;
 
     @include media-sx {
-    
+      width: 280px;
+    object-fit: unset;
     }
   }
 
