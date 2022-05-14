@@ -1,7 +1,7 @@
 const gameProjects = [
   {
     title: "Etch-a-Sketch",
-    image: "../images/etch-a-sketch.png",
+    image: "images/etch-a-sketch.png",
     description:
       "The user can choose from bright neon colors, from random RGB colors or from the shades of gray, and color the squares by hovering over the grid. The grid rows and columns can be set by clicking the 'New Grid' button and then the user can enter a number between 2-80 to set the new grid. The grid itself is made with JavaScript.",
     languagesTools: ["HTML", "CSS", "Grid", "Flexbox", "JavaScript"],
@@ -11,7 +11,7 @@ const gameProjects = [
   },
   {
     title: "Leaderboard",
-    image: "../images/leaderboard.png",
+    image: "images/leaderboard.png",
     description:
       "A simple leaderboard game, where the user can provide their name and a score, then the score gets displayed in descending order on the board after clicking the 'Refresh' button. The data is preserved with the external Leaderboard API service.",
     languagesTools: ["HTML", "CSS", "Flexbox", "JavaScript", "Webpack"],
@@ -21,7 +21,7 @@ const gameProjects = [
   },
   {
     title: "Rock Paper Scissors",
-    image: "../images/rock-paper-scissors.png",
+    image: "images/rock-paper-scissors.png",
     description:
       "The user is playing against the machine, after 5 rounds the winner will be announced. The user chooses by clicking/tapping one of the images and the machine's choice is selected randomly. Every round the scores chart is updated.",
     languagesTools: ["HTML", "CSS", "Flexbox", "JavaScript"],
