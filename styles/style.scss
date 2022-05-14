@@ -20,18 +20,18 @@
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px $icon-color; 
+  box-shadow: inset 0 0 5px $icon-color;
   border-radius: 10px;
   background: $base-color1;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: $icon-color; 
+  background: $icon-color;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f65ee0; 
+  background: #f65ee0;
 }
 
 #menu {
@@ -45,7 +45,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    transition: .5s;
+    transition: 0.5s;
     z-index: 99;
 
     &:hover {
@@ -58,10 +58,10 @@
   @include center;
 
   @include media-sx {
-      position: absolute;
-      left: -200px;
-      width: 15%;
-      padding: 15px 0;
+    position: absolute;
+    left: -200px;
+    width: 15%;
+    padding: 15px 0;
   }
 
   @include media-sm {
@@ -77,8 +77,7 @@
   height: 100vh;
   position: fixed;
   z-index: 99;
-  transition: .5s;
-
+  transition: 0.5s;
 
   #profile {
     border-radius: 50%;
@@ -91,6 +90,7 @@
 
   ul {
     @include center;
+
     @include media-sx {
       height: 45%;
     }
@@ -154,11 +154,10 @@ header {
   @include media-sm {
     background-position: 25%;
   }
-  
 
   #name {
     border-radius: 20px;
-    padding:30px 20px;
+    padding: 30px 20px;
 
     @include center;
 
@@ -240,10 +239,10 @@ header {
             background: transparent;
             text-shadow: 0 0 10px #fff;
             padding: 10px 0;
-            
+
             &:hover {
-            font-weight: 700;
-            box-shadow: none;
+              font-weight: 700;
+              box-shadow: none;
             }
           }
         }
@@ -270,7 +269,6 @@ main {
   @include media-sm {
     margin-left: 88px;
   }
-
 
   #about-me {
     @include center;
@@ -316,19 +314,19 @@ main {
     }
 
     nav {
-     @include projects-div;
+      @include projects-div;
 
-     width: 70%;
-     margin-bottom: 50px;
+      width: 70%;
+      margin-bottom: 50px;
 
-     @include media-sm {
-       width: 100%;
-     }
+      @include media-sm {
+        width: 100%;
+      }
 
-     @include media-sx {
-       width: 80%;
-       padding: 15px;
-     }
+      @include media-sx {
+        width: 80%;
+        padding: 15px;
+      }
 
       ul {
         display: flex;
@@ -416,7 +414,7 @@ main {
         img {
           width: 500px;
           height: 500px;
-          object-fit:cover;
+          object-fit: cover;
           object-position: top;
           border-radius: 20px;
 
@@ -524,9 +522,9 @@ main {
     @include media-sm {
       height: auto;
     }
-    
+
     @include center;
- 
+
     h2 {
       @include sub-title;
 
@@ -552,117 +550,118 @@ main {
         gap: 50px;
       }
 
-    p {
-      color: #fff;
-      font-family: $font2;
-      text-align: center;
-      font-size: 3.2rem;
-      line-height: 1.5;
-      width: 40%;
-
-      @include media-md {
-        font-size: 2.8rem;
-      }
-
-      @include media-sm {
-        font-size: 2.2rem;
-        width: 70%;
-      }
-
-      @include media-sx {
-        font-size: 1.8rem;
-        width: 100%;
-      }
-    }
-
-    form {
-      @include center;
-
-      @include media-sm {
-        width: 100%;
-      }
-
-      @include media-sx {
-        width: 100%;
-      }
-
-      gap: 50px;
-      width: 50%;
-
-      fieldset {
-        width: 100%;
-        display: flex;
-        gap: 25px;
-        border: none;
-
-        @include media-sx {
-          flex-direction: column;
-        }
-      }
-
-      label {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+      p {
         color: #fff;
         font-family: $font2;
-        font-size: 1.5rem;
-        font-weight: 700;
+        text-align: center;
+        font-size: 3.2rem;
+        line-height: 1.5;
+        width: 40%;
 
-        @include media-sx {
-          font-size: 1.2rem;
+        @include media-md {
+          font-size: 2.8rem;
         }
 
-        input, textarea {
-          padding: 10px;
-          border-radius: 20px;
-          font-size: 1.2rem;
+        @include media-sm {
+          font-size: 2.2rem;
+          width: 70%;
+        }
+
+        @include media-sx {
+          font-size: 1.8rem;
+          width: 100%;
+        }
+      }
+
+      form {
+        @include center;
+
+        @include media-sm {
+          width: 100%;
+        }
+
+        @include media-sx {
+          width: 100%;
+        }
+
+        gap: 50px;
+        width: 50%;
+
+        fieldset {
+          width: 100%;
+          display: flex;
+          gap: 25px;
+          border: none;
 
           @include media-sx {
+            flex-direction: column;
+          }
+        }
+
+        label {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          color: #fff;
+          font-family: $font2;
+          font-size: 1.5rem;
+          font-weight: 700;
+
+          @include media-sx {
+            font-size: 1.2rem;
+          }
+
+          input,
+          textarea {
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 1.2rem;
+
+            @include media-sx {
+              font-size: 1rem;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          textarea {
+            height: 200px;
+            font-family: $font2;
+
+            @include media-sx {
+              height: 100px;
+            }
+          }
+        }
+
+        #submit {
+          align-self: flex-start;
+          width: 20%;
+          border-radius: 20px;
+          font-family: $font2;
+          border: none;
+          font-size: 1.2rem;
+          padding: 10px;
+          background: #fff;
+          font-weight: 700;
+
+          @include media-sx {
+            width: 30%;
             font-size: 1rem;
           }
 
-          &:focus {
-            outline: none;
+          &:hover {
+            cursor: pointer;
+            background: transparent;
+            color: #fff;
+            outline: thin solid #fff;
           }
-        }
-
-        textarea {
-          height: 200px;
-          font-family: $font2;
-
-          @include media-sx {
-            height: 100px;
-          }
-        }
-      }
-
-      #submit {
-        align-self: flex-start;
-        width: 20%;
-        border-radius: 20px;
-        font-family: $font2;
-        border: none;
-        font-size: 1.2rem;
-        padding: 10px;
-        background: #fff;
-        font-weight: 700;
-
-        @include media-sx {
-          width: 30%;
-          font-size: 1rem;
-        }
-
-        &:hover {
-          cursor: pointer;
-          background: transparent;
-          color: #fff;
-          outline: thin solid #fff;
         }
       }
     }
-  }
   }
 }
 
@@ -707,7 +706,7 @@ main {
     @include media-sx {
       right: 5%;
     }
-  
+
     &:hover {
       cursor: pointer;
     }
@@ -735,7 +734,7 @@ main {
       height: 50%;
       object-fit: cover;
     }
-  }  
+  }
 
   .popup-h2 {
     color: #fff;
@@ -776,47 +775,46 @@ main {
     gap: 25px;
 
     @include media-sx {
-     width: 100%;
-    }
-
-  button {
-    width: 20%;
-    font-family: $font2;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 10px;
-    background: #fff;
-    border: none;
-    border-radius: 20px;
-
-    @include media-sm {
-      width: 30%;
-      font-size: 1rem;
-    }
-
-    @include media-md {
-      width: 25%;
-    }
-
-    @include media-sx {
       width: 100%;
-      font-size: 0.9rem;
     }
 
-    &:hover {
-      cursor: pointer;
-      background: $base-color1;
-      outline: 1px solid $icon-color;
-      box-shadow:  0 0 5px $icon-color;
-      
-    }
+    button {
+      width: 20%;
+      font-family: $font2;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 10px;
+      background: #fff;
+      border: none;
+      border-radius: 20px;
 
-    a {
-      text-decoration: none;
-      color: $icon-color;
+      @include media-sm {
+        width: 30%;
+        font-size: 1rem;
+      }
+
+      @include media-md {
+        width: 25%;
+      }
+
+      @include media-sx {
+        width: 100%;
+        font-size: 0.9rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background: $base-color1;
+        outline: 1px solid $icon-color;
+        box-shadow: 0 0 5px $icon-color;
+      }
+
+      a {
+        text-decoration: none;
+        color: $icon-color;
+      }
     }
   }
- }
 }
 
 .margin-zero {

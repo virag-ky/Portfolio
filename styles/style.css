@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -64,8 +66,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     z-index: 99;
   }
   #menu:hover {
@@ -98,8 +100,8 @@ body {
   height: 100vh;
   position: fixed;
   z-index: 99;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 600px) {
@@ -704,7 +706,8 @@ main #projects #main-div .project #image-23 {
      object-position: 45%;
 }
 
-main #projects #main-div .project #image-3, main #projects #main-div .project #image-4 {
+main #projects #main-div .project #image-3,
+main #projects #main-div .project #image-4 {
   -o-object-position: left top;
      object-position: left top;
 }
@@ -1001,19 +1004,22 @@ main #contact div form label {
   }
 }
 
-main #contact div form label input, main #contact div form label textarea {
+main #contact div form label input,
+main #contact div form label textarea {
   padding: 10px;
   border-radius: 20px;
   font-size: 1.2rem;
 }
 
 @media (max-width: 600px) {
-  main #contact div form label input, main #contact div form label textarea {
+  main #contact div form label input,
+  main #contact div form label textarea {
     font-size: 1rem;
   }
 }
 
-main #contact div form label input:focus, main #contact div form label textarea:focus {
+main #contact div form label input:focus,
+main #contact div form label textarea:focus {
   outline: none;
 }
 

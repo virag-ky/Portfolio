@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,37 +39,37 @@ $font2: 'Mulish', sans-serif;
 }
 
 @mixin media-md {
-  @media(min-width: 1300px) and (max-width: 1900px) {
+  @media (min-width: 1300px) and (max-width: 1900px) {
     @content;
   }
 }
 
 @mixin sub-title {
   color: #fff;
-      text-shadow: 0 0 3px #fff;
-      font-family: $font1;
-      font-size: 2.8rem;
-      margin: 180px 0;
-      letter-spacing: 3px;
+  text-shadow: 0 0 3px #fff;
+  font-family: $font1;
+  font-size: 2.8rem;
+  margin: 180px 0;
+  letter-spacing: 3px;
 
-      @include media-sm {
-        font-size: 2.3rem;
-        margin-top: 50px;
-      }
+  @include media-sm {
+    font-size: 2.3rem;
+    margin-top: 50px;
+  }
 
-      @include media-sx {
-        font-size: 2rem;
-        margin-bottom: 100px;
-      }
+  @include media-sx {
+    font-size: 2rem;
+    margin-bottom: 100px;
+  }
 }
 
 @mixin projects-div {
-      padding: 20px 25px;
-      border-radius: 30px;
-      width: 80vw;
-      max-width: 1700px;
-      background: rgba(240, 238, 243, 0.3);
-      backdrop-filter: blur(3px);
+  padding: 20px 25px;
+  border-radius: 30px;
+  width: 80vw;
+  max-width: 1700px;
+  background: rgba(240, 238, 243, 0.3);
+  backdrop-filter: blur(3px);
 }
 
 @mixin image-fit {
@@ -79,7 +81,8 @@ $font2: 'Mulish', sans-serif;
     object-position: 45%;
   }
 
-  #image-3, #image-4 {
+  #image-3,
+  #image-4 {
     object-position: left top;
   }
 
