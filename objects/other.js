@@ -1,7 +1,7 @@
 const otherProjects = [
   {
     title: "Balance Sheet",
-    image: "../images/balancesheet.png",
+    image: "images/balancesheet.png",
     description:
       "A sample balance sheet, showing a company's financial information. In this project I practiced using pseudo selectors. The user can jump between the 'Total' rows by clicking the 'tab' button.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
@@ -11,7 +11,7 @@ const otherProjects = [
   },
   {
     title: "Cafe Menu",
-    image: "../images/cafe-menu.png",
+    image: "images/cafe-menu.png",
     description:
       "Cafe Menu project, inspired by freeCodeCamp's cafe menu lesson.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
@@ -21,7 +21,7 @@ const otherProjects = [
   },
   {
     title: "Landing Page",
-    image: "../images/electric_car-landing_page.png",
+    image: "images/electric_car-landing_page.png",
     description:
       "This is a static landing page project from the Odin Project, the topic is about an electric car company. In this project I practiced using Flexbox to lay out the elements.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
@@ -31,7 +31,7 @@ const otherProjects = [
   },
   {
     title: "HTML-CSS Quiz",
-    image: "../images/html_css-quiz.png",
+    image: "images/html_css-quiz.png",
     description:
       "Simple quiz about HTML and CSS. I practiced using ARIA attributes and design best practices. The user can choose between the answers.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
@@ -41,7 +41,7 @@ const otherProjects = [
   },
   {
     title: "Magazine",
-    image: "../images/magazine.png",
+    image: "images/magazine.png",
     description:
       "This is a static sample magazine project, made with Grid layout.",
     languagesTools: ["HTML", "CSS", "Grid", "Flexbox"],
@@ -51,7 +51,7 @@ const otherProjects = [
   },
   {
     title: "Nutrition Label",
-    image: "../images/nutrition-label.png",
+    image: "images/nutrition-label.png",
     description:
       "Nutrition label project, which I built after I finished freeCodeCamp's typography lesson, where I learned how to style text and adjust line heights.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
@@ -61,7 +61,7 @@ const otherProjects = [
   },
   {
     title: "Odin Recipes",
-    image: "../images/recipe-page.png",
+    image: "images/recipe-page.png",
     description:
       "Recipe website project from the Odin Project. The user can navigate between the homepage and 3 additional recipe pages. The links are in the footer section.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
@@ -71,7 +71,7 @@ const otherProjects = [
   },
   {
     title: "Registration Form",
-    image: "../images/registration-form.png",
+    image: "images/registration-form.png",
     description:
       "A simple static registration form, where I practiced using form elements with the type text, number, email, password, radio buttons, checkbox, file upload, dropdown selection and textarea.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
@@ -81,7 +81,7 @@ const otherProjects = [
   },
   {
     title: "Tribute Page - Marilyn Monroe",
-    image: "../images/tribute-page.png",
+    image: "images/tribute-page.png",
     description:
       "Tribute page project of Marilyn Monroe. This was one of the final projects from freeCodeCamp's Responsive Web Design course.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
@@ -91,7 +91,7 @@ const otherProjects = [
   },
   {
     title: "Technical Documentation Page",
-    image: "../images/technical-documentation-page.png",
+    image: "images/technical-documentation-page.png",
     description:
       "JavaScript documentation page project. This project was also a final project from freeCodeCamp's Responsive Web Design course.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
