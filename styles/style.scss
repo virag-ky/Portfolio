@@ -13,6 +13,10 @@
   @include media-sx {
     width: 10px;
   }
+
+  @include media-sm {
+    width: 15px;
+  }
 }
 
 ::-webkit-scrollbar-track {
@@ -663,8 +667,9 @@ main {
 }
 
 .popup {
-  width: 80vw;
+  width: 60vw;
   height: 90vh;
+  max-width: 1200px;
   padding: 30px 80px 50px 80px;
   background: rgba(255, 255, 255, 0.1);
   position: fixed;
@@ -686,15 +691,15 @@ main {
   }
 
   @include media-sx {
-    padding: 80px 30px 20px 30px;
-    height: 80vh;
+    padding: 80px 30px 40px 30px;
+    height: 70vh;
     width: 90vw;
     gap: 30px;
   }
 
   .exit {
     position: absolute;
-    top: 5%;
+    top: 2%;
     right: 2%;
     background: transparent;
     border: none;
@@ -735,7 +740,7 @@ main {
   .popup-h2 {
     color: #fff;
     font-family: $font1;
-    font-size: 3rem;
+    font-size: 2.5rem;
 
     @include media-sm {
       font-size: 2rem;
@@ -752,6 +757,7 @@ main {
     color: #fff;
     font-family: $font2;
     font-size: 2rem;
+    line-height: 1.5;
     text-align: center;
 
     @include media-sm {
@@ -759,7 +765,7 @@ main {
     }
 
     @include media-sx {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -770,9 +776,7 @@ main {
     gap: 25px;
 
     @include media-sx {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+     width: 100%;
     }
 
   button {
@@ -795,9 +799,8 @@ main {
     }
 
     @include media-sx {
-      width: 65%;
+      width: 100%;
       font-size: 0.9rem;
-      padding: 5px;
     }
 
     &:hover {
