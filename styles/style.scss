@@ -212,10 +212,9 @@ header {
       justify-content: space-between;
 
       @include media-sx {
-        gap: 25px;
         background: rgba(12, 1, 71, 0.5);
         border-radius: 15px;
-        padding: 10px 20px;
+        padding: 5px 10px;
       }
 
       li {
@@ -235,10 +234,9 @@ header {
           }
 
           @include media-sx {
-            font-size: 1.1rem;
+            font-size: 1rem;
             background: transparent;
             text-shadow: 0 0 10px #fff;
-            padding: 10px 0;
 
             &:hover {
               font-weight: 700;
@@ -260,7 +258,6 @@ main {
   background-size: cover;
   background-attachment: fixed;
   justify-content: flex-start;
-  padding-bottom: 80px;
 
   @include media-sx {
     margin-left: 0;
@@ -372,6 +369,7 @@ main {
       grid-template-columns: repeat(3, 1fr);
       row-gap: 50px;
       justify-items: center;
+      align-content: center;
       padding-top: 50px;
       padding-bottom: 50px;
       width: 90vw;
@@ -586,6 +584,7 @@ main {
 
         gap: 50px;
         width: 50%;
+        padding-bottom: 80px;
 
         fieldset {
           width: 100%;
@@ -617,6 +616,7 @@ main {
             padding: 10px;
             border-radius: 20px;
             font-size: 1.2rem;
+            border: none;
 
             @include media-sx {
               font-size: 1rem;
@@ -731,8 +731,7 @@ main {
     object-fit: contain;
 
     @include media-sx {
-      height: 50%;
-      object-fit: cover;
+    
     }
   }
 
@@ -747,7 +746,7 @@ main {
     }
 
     @include media-sx {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       text-align: center;
     }
   }
@@ -764,7 +763,7 @@ main {
     }
 
     @include media-sx {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 
@@ -799,7 +798,7 @@ main {
 
       @include media-sx {
         width: 100%;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
 
       &:hover {
@@ -830,4 +829,8 @@ main {
   font-family: $font2;
   font-weight: 700;
   font-size: 1.2rem;
+
+  @include media-sx {
+    font-size: 1rem;
+  }
 }

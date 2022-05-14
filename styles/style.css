@@ -329,10 +329,9 @@ header #nav-links ul {
 
 @media (max-width: 600px) {
   header #nav-links ul {
-    gap: 25px;
     background: rgba(12, 1, 71, 0.5);
     border-radius: 15px;
-    padding: 10px 20px;
+    padding: 5px 10px;
   }
 }
 
@@ -357,10 +356,9 @@ header #nav-links ul li a:hover {
 
 @media (max-width: 600px) {
   header #nav-links ul li a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     background: transparent;
     text-shadow: 0 0 10px #fff;
-    padding: 10px 0;
   }
   header #nav-links ul li a:hover {
     font-weight: 700;
@@ -391,7 +389,6 @@ main {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-bottom: 80px;
 }
 
 @media (max-width: 600px) {
@@ -604,6 +601,8 @@ main #projects #main-div {
       grid-template-columns: repeat(3, 1fr);
   row-gap: 50px;
   justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
   width: 90vw;
@@ -950,6 +949,7 @@ main #contact div form {
           align-items: center;
   gap: 50px;
   width: 50%;
+  padding-bottom: 80px;
 }
 
 @media (min-width: 601px) and (max-width: 1299px) {
@@ -1009,6 +1009,7 @@ main #contact div form label textarea {
   padding: 10px;
   border-radius: 20px;
   font-size: 1.2rem;
+  border: none;
 }
 
 @media (max-width: 600px) {
@@ -1152,14 +1153,6 @@ main #contact div form #submit:hover {
      object-fit: contain;
 }
 
-@media (max-width: 600px) {
-  .popup img {
-    height: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
 .popup .popup-h2 {
   color: #fff;
   font-family: "Space Mono", monospace;
@@ -1175,7 +1168,7 @@ main #contact div form #submit:hover {
 
 @media (max-width: 600px) {
   .popup .popup-h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 }
@@ -1196,7 +1189,7 @@ main #contact div form #submit:hover {
 
 @media (max-width: 600px) {
   .popup p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -1244,7 +1237,7 @@ main #contact div form #submit:hover {
 @media (max-width: 600px) {
   .popup .buttons-div button {
     width: 100%;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -1274,5 +1267,11 @@ main #contact div form #submit:hover {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .small.show {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
