@@ -510,8 +510,8 @@ main {
   }
 
   #contact {
-    height: 100vh;
     width: 80%;
+    padding-bottom: 120px;
 
     @include media-sx {
       height: auto;
@@ -601,7 +601,7 @@ main {
           width: 100%;
           display: flex;
           flex-direction: column;
-          gap: 15px;
+          gap: 12px;
           color: #fff;
           font-family: $font2;
           font-size: 1.5rem;

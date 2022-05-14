@@ -812,8 +812,8 @@ main #projects #main-div .project .see-project:hover {
 }
 
 main #contact {
-  height: 100vh;
   width: 80%;
+  padding-bottom: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -991,7 +991,7 @@ main #contact div form label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 15px;
+  gap: 12px;
   color: #fff;
   font-family: "Mulish", sans-serif;
   font-size: 1.5rem;
