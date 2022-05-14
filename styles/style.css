@@ -1104,8 +1104,8 @@ main #contact div form #submit:hover {
 
 @media (max-width: 600px) {
   .popup {
-    padding: 80px 30px 40px 30px;
-    height: 70vh;
+    padding: 60px 20px 40px 20px;
+    height: 75vh;
     width: 90vw;
     gap: 30px;
   }
@@ -1151,6 +1151,14 @@ main #contact div form #submit:hover {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .popup img {
+    width: 280px;
+    -o-object-fit: unset;
+       object-fit: unset;
+  }
 }
 
 .popup .popup-h2 {
