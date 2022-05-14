@@ -284,11 +284,11 @@ main {
     p {
       width: 80%;
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       font-family: $font2;
       color: #fff;
       line-height: 2;
-      font-weight: 700;
+      font-weight: 500;
 
       @include media-sm {
         font-size: 1.5rem;
@@ -518,12 +518,33 @@ main {
       @include sub-title;
     }
 
-    form {
-      width: 50%;
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
 
+    p {
+      color: #fff;
+      font-family: $font2;
+      text-align: center;
+      font-size: 3.6rem;
+      line-height: 1.5;
+      width: 40%;
+    }
+
+    form {
       @include center;
 
       gap: 50px;
+      width: 50%;
+
+      fieldset {
+        width: 100%;
+        display: flex;
+        gap: 25px;
+        border: none;
+      }
 
       label {
         width: 100%;
@@ -539,6 +560,10 @@ main {
           padding: 10px;
           border-radius: 20px;
           font-size: 1.2rem;
+
+          &:focus {
+            outline: none;
+          }
         }
 
         textarea {
@@ -566,6 +591,7 @@ main {
         }
       }
     }
+  }
   }
 }
 
@@ -725,4 +751,15 @@ main {
 
 .margin-zero {
   margin-left: 0;
+}
+
+.small.hidden {
+  display: none;
+}
+
+.small.show {
+  color: red;
+  font-family: $font2;
+  font-weight: 700;
+  font-size: 1.2rem;
 }

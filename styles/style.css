@@ -447,11 +447,11 @@ main #about-me h2 {
 main #about-me p {
   width: 80%;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-family: "Mulish", sans-serif;
   color: #fff;
   line-height: 2;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 @media (min-width: 601px) and (max-width: 1299px) {
@@ -843,8 +843,29 @@ main #contact h2 {
   }
 }
 
-main #contact form {
-  width: 50%;
+main #contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+main #contact div p {
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  font-size: 3.6rem;
+  line-height: 1.5;
+  width: 40%;
+}
+
+main #contact div form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -859,9 +880,19 @@ main #contact form {
       -ms-flex-align: center;
           align-items: center;
   gap: 50px;
+  width: 50%;
 }
 
-main #contact form label {
+main #contact div form fieldset {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  border: none;
+}
+
+main #contact div form label {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -877,18 +908,22 @@ main #contact form label {
   font-weight: 700;
 }
 
-main #contact form label input, main #contact form label textarea {
+main #contact div form label input, main #contact div form label textarea {
   padding: 10px;
   border-radius: 20px;
   font-size: 1.2rem;
 }
 
-main #contact form label textarea {
+main #contact div form label input:focus, main #contact div form label textarea:focus {
+  outline: none;
+}
+
+main #contact div form label textarea {
   height: 200px;
   font-family: "Mulish", sans-serif;
 }
 
-main #contact form #submit {
+main #contact div form #submit {
   -ms-flex-item-align: start;
       align-self: flex-start;
   width: 20%;
@@ -901,7 +936,7 @@ main #contact form #submit {
   font-weight: 700;
 }
 
-main #contact form #submit:hover {
+main #contact div form #submit:hover {
   cursor: pointer;
   background: transparent;
   color: #fff;
@@ -1116,5 +1151,16 @@ main #contact form #submit:hover {
 
 .margin-zero {
   margin-left: 0;
+}
+
+.small.hidden {
+  display: none;
+}
+
+.small.show {
+  color: red;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */

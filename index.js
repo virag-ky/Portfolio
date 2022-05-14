@@ -120,4 +120,31 @@ window.onload = () => {
     );
   };
   seeProjects(otherProjects);
+
+  const form = document.querySelector("form");
+  const email = document.getElementById("email");
+  const lowerCaseRegex = /[A-Z]/;
+  const errorMessage = document.getElementById("uppercase-email");
+  const emptyEmail = document.getElementById("empty-email");
+  const message = document.querySelector("textarea");
+  const emptyTextarea = document.getElementById("empty-textarea");
+
+  form.addEventListener("submit", (e) => {
+    if (lowerCaseRegex.test(email.value.trim())) {
+      e.preventDefault();
+      errorMessage.classList.remove("hidden");
+      emptyEmail.classList.add("hidden");
+      emptyTextarea.classList.add("hidden");
+    } else if (email.value === "") {
+      e.preventDefault();
+      emptyEmail.classList.remove("hidden");
+      errorMessage.classList.add("hidden");
+      emptyTextarea.classList.add("hidden");
+    } else if (message.value === "") {
+      e.preventDefault();
+      errorMessage.classList.add("hidden");
+      emptyEmail.classList.add("hidden");
+      emptyTextarea.classList.remove("hidden");
+    }
+  });
 };
