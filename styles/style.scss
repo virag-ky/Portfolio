@@ -561,6 +561,10 @@ main {
       @include media-sx {
         font-size: 2rem;
       }
+
+      @include media-sm {
+        font-size: 2rem;
+      }
     }
   }
 
