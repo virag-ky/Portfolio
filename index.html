@@ -42,14 +42,6 @@
             ><i class="fab fa-linkedin"></i
           ></a>
         </li>
-        <li>
-          <a
-            href="mailto: vkormoczy@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fas fa-envelope"></i
-          ></a>
-        </li>
       </ul>
     </nav>
     <header>
@@ -95,6 +87,27 @@
           </ul>
         </nav>
         <div id="main-div"></div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/mrgjrajb" method="POST">
+          <label>
+            Your email:
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email..."
+            />
+          </label>
+          <label>
+            Your message:
+            <textarea
+              name="message"
+              placeholder="Type your message..."
+            ></textarea>
+          </label>
+          <button type="submit" id="submit">Send</button>
+        </form>
       </section>
     </main>
   </body>
