@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -26,6 +28,12 @@ body {
 @media (max-width: 600px) {
   ::-webkit-scrollbar {
     width: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1299px) {
+  ::-webkit-scrollbar {
+    width: 15px;
   }
 }
 
@@ -58,8 +66,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     z-index: 99;
   }
   #menu:hover {
@@ -92,8 +100,8 @@ body {
   height: 100vh;
   position: fixed;
   z-index: 99;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 600px) {
@@ -447,11 +455,11 @@ main #about-me h2 {
 main #about-me p {
   width: 80%;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-family: "Mulish", sans-serif;
   color: #fff;
   line-height: 2;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 @media (min-width: 601px) and (max-width: 1299px) {
@@ -600,6 +608,7 @@ main #projects #main-div {
   padding-bottom: 50px;
   width: 90vw;
   max-width: 1800px;
+  margin-bottom: 200px;
 }
 
 @media (min-width: 1300px) and (max-width: 1900px) {
@@ -697,7 +706,8 @@ main #projects #main-div .project #image-23 {
      object-position: 45%;
 }
 
-main #projects #main-div .project #image-3, main #projects #main-div .project #image-4 {
+main #projects #main-div .project #image-3,
+main #projects #main-div .project #image-4 {
   -o-object-position: left top;
      object-position: left top;
 }
@@ -802,9 +812,259 @@ main #projects #main-div .project .see-project:hover {
           box-shadow: 0 0 20px #01013f;
 }
 
+main #contact {
+  height: 100vh;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 600px) {
+  main #contact {
+    height: auto;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1299px) {
+  main #contact {
+    height: auto;
+  }
+}
+
+main #contact h2 {
+  color: #fff;
+  text-shadow: 0 0 3px #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 2.8rem;
+  margin: 180px 0;
+  letter-spacing: 3px;
+}
+
+@media (min-width: 601px) and (max-width: 1299px) {
+  main #contact h2 {
+    font-size: 2.3rem;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  main #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1299px) {
+  main #contact h2 {
+    margin-bottom: 100px;
+  }
+}
+
+main #contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1600px;
+}
+
+@media (min-width: 601px) and (max-width: 1299px) {
+  main #contact div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  main #contact div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+}
+
+main #contact div p {
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 1.5;
+  width: 40%;
+}
+
+@media (min-width: 1300px) and (max-width: 1900px) {
+  main #contact div p {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1299px) {
+  main #contact div p {
+    font-size: 2.2rem;
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  main #contact div p {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+}
+
+main #contact div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  width: 50%;
+}
+
+@media (min-width: 601px) and (max-width: 1299px) {
+  main #contact div form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  main #contact div form {
+    width: 100%;
+  }
+}
+
+main #contact div form fieldset {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  border: none;
+}
+
+@media (max-width: 600px) {
+  main #contact div form fieldset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main #contact div form label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  main #contact div form label {
+    font-size: 1.2rem;
+  }
+}
+
+main #contact div form label input,
+main #contact div form label textarea {
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  main #contact div form label input,
+  main #contact div form label textarea {
+    font-size: 1rem;
+  }
+}
+
+main #contact div form label input:focus,
+main #contact div form label textarea:focus {
+  outline: none;
+}
+
+main #contact div form label textarea {
+  height: 200px;
+  font-family: "Mulish", sans-serif;
+}
+
+@media (max-width: 600px) {
+  main #contact div form label textarea {
+    height: 100px;
+  }
+}
+
+main #contact div form #submit {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 20%;
+  border-radius: 20px;
+  font-family: "Mulish", sans-serif;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  background: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  main #contact div form #submit {
+    width: 30%;
+    font-size: 1rem;
+  }
+}
+
+main #contact div form #submit:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  outline: thin solid #fff;
+}
+
 .popup {
-  width: 80vw;
+  width: 60vw;
   height: 90vh;
+  max-width: 1200px;
   padding: 30px 80px 50px 80px;
   background: rgba(255, 255, 255, 0.1);
   position: fixed;
@@ -843,8 +1103,8 @@ main #projects #main-div .project .see-project:hover {
 
 @media (max-width: 600px) {
   .popup {
-    padding: 80px 30px 20px 30px;
-    height: 80vh;
+    padding: 80px 30px 40px 30px;
+    height: 70vh;
     width: 90vw;
     gap: 30px;
   }
@@ -852,7 +1112,7 @@ main #projects #main-div .project .see-project:hover {
 
 .popup .exit {
   position: absolute;
-  top: 5%;
+  top: 2%;
   right: 2%;
   background: transparent;
   border: none;
@@ -903,7 +1163,7 @@ main #projects #main-div .project .see-project:hover {
 .popup .popup-h2 {
   color: #fff;
   font-family: "Space Mono", monospace;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 601px) and (max-width: 1299px) {
@@ -924,6 +1184,7 @@ main #projects #main-div .project .see-project:hover {
   color: #fff;
   font-family: "Mulish", sans-serif;
   font-size: 2rem;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -935,7 +1196,7 @@ main #projects #main-div .project .see-project:hover {
 
 @media (max-width: 600px) {
   .popup p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -952,14 +1213,7 @@ main #projects #main-div .project .see-project:hover {
 
 @media (max-width: 600px) {
   .popup .buttons-div {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 10px;
+    width: 100%;
   }
 }
 
@@ -989,9 +1243,8 @@ main #projects #main-div .project .see-project:hover {
 
 @media (max-width: 600px) {
   .popup .buttons-div button {
-    width: 65%;
+    width: 100%;
     font-size: 0.9rem;
-    padding: 5px;
   }
 }
 
@@ -1010,5 +1263,16 @@ main #projects #main-div .project .see-project:hover {
 
 .margin-zero {
   margin-left: 0;
+}
+
+.small.hidden {
+  display: none;
+}
+
+.small.show {
+  color: red;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */

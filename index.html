@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Virag Kormoczy Portfolio</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <title>Virag Kormoczy Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/5038/5038305.png"
+    />
     <script
       src="https://kit.fontawesome.com/e1fe8e6842.js"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js" type="module" defer></script>
+    <script src="index.js" type="module"></script>
   </head>
   <body>
     <nav id="side-nav">
@@ -40,14 +41,6 @@
             target="_blank"
             rel="noopener noreferrer"
             ><i class="fab fa-linkedin"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="mailto: vkormoczy@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fas fa-envelope"></i
           ></a>
         </li>
       </ul>
@@ -79,7 +72,8 @@
           experience in pair programming with the driver/navigator method. In
           this multi-cultural environment we also learn how to manage our time,
           how to communicate effectively with our peers and work together as a
-          team.
+          team. Until now, I gained skills in HTML, CSS/Sass, JavaScript and
+          Git.
         </p>
       </section>
       <section id="projects">
@@ -95,6 +89,53 @@
           </ul>
         </nav>
         <div id="main-div"></div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <div>
+          <p>
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </p>
+          <form action="https://formspree.io/f/mrgjrajb" method="POST">
+            <fieldset>
+              <label>
+                Your name:
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name..."
+                />
+              </label>
+              <label>
+                Your email:
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email..."
+                />
+              </label>
+            </fieldset>
+            <label>
+              Your message:
+              <textarea
+                name="message"
+                placeholder="Type your message..."
+              ></textarea>
+            </label>
+            <small class="small hidden show" id="uppercase-email"
+              >Please, enter valid email: lower case only.</small
+            >
+            <small class="small hidden show" id="empty-email"
+              >Please, enter your email.</small
+            >
+            <small class="small hidden show" id="empty-textarea"
+              >Please, type a message.</small
+            >
+            <button type="submit" id="submit">Send</button>
+          </form>
+        </div>
       </section>
     </main>
   </body>

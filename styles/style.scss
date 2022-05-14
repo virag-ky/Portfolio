@@ -13,21 +13,25 @@
   @include media-sx {
     width: 10px;
   }
+
+  @include media-sm {
+    width: 15px;
+  }
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px $icon-color; 
+  box-shadow: inset 0 0 5px $icon-color;
   border-radius: 10px;
   background: $base-color1;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: $icon-color; 
+  background: $icon-color;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #f65ee0; 
+  background: #f65ee0;
 }
 
 #menu {
@@ -41,7 +45,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    transition: .5s;
+    transition: 0.5s;
     z-index: 99;
 
     &:hover {
@@ -54,10 +58,10 @@
   @include center;
 
   @include media-sx {
-      position: absolute;
-      left: -200px;
-      width: 15%;
-      padding: 15px 0;
+    position: absolute;
+    left: -200px;
+    width: 15%;
+    padding: 15px 0;
   }
 
   @include media-sm {
@@ -73,8 +77,7 @@
   height: 100vh;
   position: fixed;
   z-index: 99;
-  transition: .5s;
-
+  transition: 0.5s;
 
   #profile {
     border-radius: 50%;
@@ -87,6 +90,7 @@
 
   ul {
     @include center;
+
     @include media-sx {
       height: 45%;
     }
@@ -150,11 +154,10 @@ header {
   @include media-sm {
     background-position: 25%;
   }
-  
 
   #name {
     border-radius: 20px;
-    padding:30px 20px;
+    padding: 30px 20px;
 
     @include center;
 
@@ -236,10 +239,10 @@ header {
             background: transparent;
             text-shadow: 0 0 10px #fff;
             padding: 10px 0;
-            
+
             &:hover {
-            font-weight: 700;
-            box-shadow: none;
+              font-weight: 700;
+              box-shadow: none;
             }
           }
         }
@@ -267,7 +270,6 @@ main {
     margin-left: 88px;
   }
 
-
   #about-me {
     @include center;
 
@@ -284,11 +286,11 @@ main {
     p {
       width: 80%;
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       font-family: $font2;
       color: #fff;
       line-height: 2;
-      font-weight: 700;
+      font-weight: 500;
 
       @include media-sm {
         font-size: 1.5rem;
@@ -312,19 +314,19 @@ main {
     }
 
     nav {
-     @include projects-div;
+      @include projects-div;
 
-     width: 70%;
-     margin-bottom: 50px;
+      width: 70%;
+      margin-bottom: 50px;
 
-     @include media-sm {
-       width: 100%;
-     }
+      @include media-sm {
+        width: 100%;
+      }
 
-     @include media-sx {
-       width: 80%;
-       padding: 15px;
-     }
+      @include media-sx {
+        width: 80%;
+        padding: 15px;
+      }
 
       ul {
         display: flex;
@@ -374,6 +376,7 @@ main {
       padding-bottom: 50px;
       width: 90vw;
       max-width: 1800px;
+      margin-bottom: 200px;
 
       @include media-md {
         grid-template-columns: repeat(2, 1fr);
@@ -411,7 +414,7 @@ main {
         img {
           width: 500px;
           height: 500px;
-          object-fit:cover;
+          object-fit: cover;
           object-position: top;
           border-radius: 20px;
 
@@ -507,11 +510,165 @@ main {
       }
     }
   }
+
+  #contact {
+    height: 100vh;
+    width: 80%;
+
+    @include media-sx {
+      height: auto;
+    }
+
+    @include media-sm {
+      height: auto;
+    }
+
+    @include center;
+
+    h2 {
+      @include sub-title;
+
+      @include media-sm {
+        margin-bottom: 100px;
+      }
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1600px;
+
+      @include media-sm {
+        flex-direction: column;
+        gap: 100px;
+      }
+
+      @include media-sx {
+        flex-direction: column;
+        gap: 50px;
+      }
+
+      p {
+        color: #fff;
+        font-family: $font2;
+        text-align: center;
+        font-size: 3.2rem;
+        line-height: 1.5;
+        width: 40%;
+
+        @include media-md {
+          font-size: 2.8rem;
+        }
+
+        @include media-sm {
+          font-size: 2.2rem;
+          width: 70%;
+        }
+
+        @include media-sx {
+          font-size: 1.8rem;
+          width: 100%;
+        }
+      }
+
+      form {
+        @include center;
+
+        @include media-sm {
+          width: 100%;
+        }
+
+        @include media-sx {
+          width: 100%;
+        }
+
+        gap: 50px;
+        width: 50%;
+
+        fieldset {
+          width: 100%;
+          display: flex;
+          gap: 25px;
+          border: none;
+
+          @include media-sx {
+            flex-direction: column;
+          }
+        }
+
+        label {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          color: #fff;
+          font-family: $font2;
+          font-size: 1.5rem;
+          font-weight: 700;
+
+          @include media-sx {
+            font-size: 1.2rem;
+          }
+
+          input,
+          textarea {
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 1.2rem;
+
+            @include media-sx {
+              font-size: 1rem;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          textarea {
+            height: 200px;
+            font-family: $font2;
+
+            @include media-sx {
+              height: 100px;
+            }
+          }
+        }
+
+        #submit {
+          align-self: flex-start;
+          width: 20%;
+          border-radius: 20px;
+          font-family: $font2;
+          border: none;
+          font-size: 1.2rem;
+          padding: 10px;
+          background: #fff;
+          font-weight: 700;
+
+          @include media-sx {
+            width: 30%;
+            font-size: 1rem;
+          }
+
+          &:hover {
+            cursor: pointer;
+            background: transparent;
+            color: #fff;
+            outline: thin solid #fff;
+          }
+        }
+      }
+    }
+  }
 }
 
 .popup {
-  width: 80vw;
+  width: 60vw;
   height: 90vh;
+  max-width: 1200px;
   padding: 30px 80px 50px 80px;
   background: rgba(255, 255, 255, 0.1);
   position: fixed;
@@ -533,15 +690,15 @@ main {
   }
 
   @include media-sx {
-    padding: 80px 30px 20px 30px;
-    height: 80vh;
+    padding: 80px 30px 40px 30px;
+    height: 70vh;
     width: 90vw;
     gap: 30px;
   }
 
   .exit {
     position: absolute;
-    top: 5%;
+    top: 2%;
     right: 2%;
     background: transparent;
     border: none;
@@ -549,7 +706,7 @@ main {
     @include media-sx {
       right: 5%;
     }
-  
+
     &:hover {
       cursor: pointer;
     }
@@ -577,12 +734,12 @@ main {
       height: 50%;
       object-fit: cover;
     }
-  }  
+  }
 
   .popup-h2 {
     color: #fff;
     font-family: $font1;
-    font-size: 3rem;
+    font-size: 2.5rem;
 
     @include media-sm {
       font-size: 2rem;
@@ -599,6 +756,7 @@ main {
     color: #fff;
     font-family: $font2;
     font-size: 2rem;
+    line-height: 1.5;
     text-align: center;
 
     @include media-sm {
@@ -606,7 +764,7 @@ main {
     }
 
     @include media-sx {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -617,52 +775,59 @@ main {
     gap: 25px;
 
     @include media-sx {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+      width: 100%;
     }
 
-  button {
-    width: 20%;
-    font-family: $font2;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 10px;
-    background: #fff;
-    border: none;
-    border-radius: 20px;
+    button {
+      width: 20%;
+      font-family: $font2;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 10px;
+      background: #fff;
+      border: none;
+      border-radius: 20px;
 
-    @include media-sm {
-      width: 30%;
-      font-size: 1rem;
-    }
+      @include media-sm {
+        width: 30%;
+        font-size: 1rem;
+      }
 
-    @include media-md {
-      width: 25%;
-    }
+      @include media-md {
+        width: 25%;
+      }
 
-    @include media-sx {
-      width: 65%;
-      font-size: 0.9rem;
-      padding: 5px;
-    }
+      @include media-sx {
+        width: 100%;
+        font-size: 0.9rem;
+      }
 
-    &:hover {
-      cursor: pointer;
-      background: $base-color1;
-      outline: 1px solid $icon-color;
-      box-shadow:  0 0 5px $icon-color;
-      
-    }
+      &:hover {
+        cursor: pointer;
+        background: $base-color1;
+        outline: 1px solid $icon-color;
+        box-shadow: 0 0 5px $icon-color;
+      }
 
-    a {
-      text-decoration: none;
-      color: $icon-color;
+      a {
+        text-decoration: none;
+        color: $icon-color;
+      }
     }
   }
-}
 }
 
 .margin-zero {
   margin-left: 0;
+}
+
+.small.hidden {
+  display: none;
+}
+
+.small.show {
+  color: red;
+  font-family: $font2;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
