@@ -949,7 +949,7 @@ main #contact div form {
           align-items: center;
   gap: 50px;
   width: 50%;
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 @media (min-width: 601px) and (max-width: 1299px) {
@@ -1156,6 +1156,7 @@ main #contact div form #submit:hover {
 @media (max-width: 600px) {
   .popup img {
     width: 280px;
+    height: auto;
     -o-object-fit: unset;
        object-fit: unset;
   }

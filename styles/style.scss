@@ -584,7 +584,7 @@ main {
 
         gap: 50px;
         width: 50%;
-        padding-bottom: 80px;
+        margin-bottom: 80px;
 
         fieldset {
           width: 100%;
@@ -732,6 +732,7 @@ main {
 
     @include media-sx {
       width: 280px;
+      height: auto;
     object-fit: unset;
     }
   }
