@@ -374,6 +374,7 @@ main {
       padding-bottom: 50px;
       width: 90vw;
       max-width: 1800px;
+      margin-bottom: 200px;
 
       @include media-md {
         grid-template-columns: repeat(2, 1fr);
@@ -511,11 +512,23 @@ main {
   #contact {
     height: 100vh;
     width: 80%;
+
+    @include media-sx {
+      height: auto;
+    }
+
+    @include media-sm {
+      height: auto;
+    }
     
     @include center;
  
     h2 {
       @include sub-title;
+
+      @include media-sm {
+        margin-bottom: 100px;
+      }
     }
 
     div {
@@ -523,18 +536,51 @@ main {
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      max-width: 1600px;
+
+      @include media-sm {
+        flex-direction: column;
+        gap: 100px;
+      }
+
+      @include media-sx {
+        flex-direction: column;
+        gap: 50px;
+      }
 
     p {
       color: #fff;
       font-family: $font2;
       text-align: center;
-      font-size: 3.6rem;
+      font-size: 3.2rem;
       line-height: 1.5;
       width: 40%;
+
+      @include media-md {
+        font-size: 2.8rem;
+      }
+
+      @include media-sm {
+        font-size: 2.2rem;
+        width: 70%;
+      }
+
+      @include media-sx {
+        font-size: 1.8rem;
+        width: 100%;
+      }
     }
 
     form {
       @include center;
+
+      @include media-sm {
+        width: 100%;
+      }
+
+      @include media-sx {
+        width: 100%;
+      }
 
       gap: 50px;
       width: 50%;
@@ -544,6 +590,10 @@ main {
         display: flex;
         gap: 25px;
         border: none;
+
+        @include media-sx {
+          flex-direction: column;
+        }
       }
 
       label {
@@ -556,10 +606,18 @@ main {
         font-size: 1.5rem;
         font-weight: 700;
 
+        @include media-sx {
+          font-size: 1.2rem;
+        }
+
         input, textarea {
           padding: 10px;
           border-radius: 20px;
           font-size: 1.2rem;
+
+          @include media-sx {
+            font-size: 1rem;
+          }
 
           &:focus {
             outline: none;
@@ -569,6 +627,10 @@ main {
         textarea {
           height: 200px;
           font-family: $font2;
+
+          @include media-sx {
+            height: 100px;
+          }
         }
       }
 
@@ -582,6 +644,11 @@ main {
         padding: 10px;
         background: #fff;
         font-weight: 700;
+
+        @include media-sx {
+          width: 30%;
+          font-size: 1rem;
+        }
 
         &:hover {
           cursor: pointer;

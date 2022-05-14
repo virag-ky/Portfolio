@@ -600,6 +600,7 @@ main #projects #main-div {
   padding-bottom: 50px;
   width: 90vw;
   max-width: 1800px;
+  margin-bottom: 200px;
 }
 
 @media (min-width: 1300px) and (max-width: 1900px) {
@@ -820,6 +821,18 @@ main #contact {
           align-items: center;
 }
 
+@media (max-width: 600px) {
+  main #contact {
+    height: auto;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1299px) {
+  main #contact {
+    height: auto;
+  }
+}
+
 main #contact h2 {
   color: #fff;
   text-shadow: 0 0 3px #fff;
@@ -843,6 +856,12 @@ main #contact h2 {
   }
 }
 
+@media (min-width: 601px) and (max-width: 1299px) {
+  main #contact h2 {
+    margin-bottom: 100px;
+  }
+}
+
 main #contact div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,15 +873,56 @@ main #contact div {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  max-width: 1600px;
+}
+
+@media (min-width: 601px) and (max-width: 1299px) {
+  main #contact div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  main #contact div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
 }
 
 main #contact div p {
   color: #fff;
   font-family: "Mulish", sans-serif;
   text-align: center;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   line-height: 1.5;
   width: 40%;
+}
+
+@media (min-width: 1300px) and (max-width: 1900px) {
+  main #contact div p {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1299px) {
+  main #contact div p {
+    font-size: 2.2rem;
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  main #contact div p {
+    font-size: 1.8rem;
+    width: 100%;
+  }
 }
 
 main #contact div form {
@@ -883,6 +943,18 @@ main #contact div form {
   width: 50%;
 }
 
+@media (min-width: 601px) and (max-width: 1299px) {
+  main #contact div form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  main #contact div form {
+    width: 100%;
+  }
+}
+
 main #contact div form fieldset {
   width: 100%;
   display: -webkit-box;
@@ -890,6 +962,15 @@ main #contact div form fieldset {
   display: flex;
   gap: 25px;
   border: none;
+}
+
+@media (max-width: 600px) {
+  main #contact div form fieldset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 main #contact div form label {
@@ -908,10 +989,22 @@ main #contact div form label {
   font-weight: 700;
 }
 
+@media (max-width: 600px) {
+  main #contact div form label {
+    font-size: 1.2rem;
+  }
+}
+
 main #contact div form label input, main #contact div form label textarea {
   padding: 10px;
   border-radius: 20px;
   font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  main #contact div form label input, main #contact div form label textarea {
+    font-size: 1rem;
+  }
 }
 
 main #contact div form label input:focus, main #contact div form label textarea:focus {
@@ -921,6 +1014,12 @@ main #contact div form label input:focus, main #contact div form label textarea:
 main #contact div form label textarea {
   height: 200px;
   font-family: "Mulish", sans-serif;
+}
+
+@media (max-width: 600px) {
+  main #contact div form label textarea {
+    height: 100px;
+  }
 }
 
 main #contact div form #submit {
@@ -934,6 +1033,13 @@ main #contact div form #submit {
   padding: 10px;
   background: #fff;
   font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  main #contact div form #submit {
+    width: 30%;
+    font-size: 1rem;
+  }
 }
 
 main #contact div form #submit:hover {
