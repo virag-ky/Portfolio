@@ -1000,7 +1000,7 @@ main #contact div form label {
 
 @media (max-width: 600px) {
   main #contact div form label {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
