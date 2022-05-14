@@ -3,7 +3,7 @@ const cssArtProjects = [
     title: "CSS Color Markers",
     image: "../images/projects/color-markers.png",
     description:
-      "Colored markers made with CSS, inspired by freeCodeCamp's lesson.",
+      "Colored markers made with CSS. I built this project after I finished freeCodeCamp's CSS colors lesson, where I studied more about the color values.",
     languagesTools: ["HTML", "CSS"],
     liveUrl: "https://virag-ky.github.io/CSS-Color-Markers/",
     githubUrl: "https://github.com/virag-ky/CSS-Color-Markers",
@@ -13,7 +13,7 @@ const cssArtProjects = [
     title: "CSS Penguins",
     image: "../images/projects/css-penguins.png",
     description:
-      "It's a fun project, made with CSS. Animation is added to the main penguins right arm.",
+      "It's a fun project, made with CSS. The project was built after I finished freeCodeCamp's CSS transforms lesson, where I learned how to animate elements on the page. Animation is added to the main penguins right arm, so that the penguin is waving.",
     languagesTools: ["HTML", "CSS"],
     liveUrl: "https://virag-ky.github.io/CSS-Penguins/",
     githubUrl: "https://github.com/virag-ky/CSS-Penguins",
@@ -23,7 +23,7 @@ const cssArtProjects = [
     title: "City Skyline",
     image: "../images/projects/cityskyline.png",
     description:
-      "City skyline project made with HTML and CSS. The user can tap/click anywhere on the screen to toggle between daytime and nighttime.",
+      "City skyline project made with HTML and CSS. Here I used CSS variables for the first time, so I can reuse them in my CSS code. The user can tap/click anywhere on the screen to toggle between daytime and nighttime.",
     languagesTools: ["HTML", "CSS", "Flexbox", "JavaScript"],
     liveUrl: "https://virag-ky.github.io/City-Skyline/",
     githubUrl: "https://github.com/virag-ky/City-Skyline",

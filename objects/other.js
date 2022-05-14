@@ -3,7 +3,7 @@ const otherProjects = [
     title: "Balance Sheet",
     image: "../images/projects/balancesheet.png",
     description:
-      "A sample balance sheet, showing a company's financial information. The user can jump between the 'Total' rows by clicking the 'tab' button.",
+      "A sample balance sheet, showing a company's financial information. In this project I practiced using pseudo selectors. The user can jump between the 'Total' rows by clicking the 'tab' button.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Balance-Sheet/",
     githubUrl: "https://github.com/virag-ky/Balance-Sheet",
@@ -23,7 +23,7 @@ const otherProjects = [
     title: "Landing Page",
     image: "../images/projects/electric_car-landing_page.png",
     description:
-      "This is a landing page project from the Odin Project, the topic is about an electric car company.",
+      "This is a static landing page project from the Odin Project, the topic is about an electric car company. In this project I practiced using Flexbox to lay out the elements.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Electric-car-landing-page/",
     githubUrl: "https://github.com/virag-ky/Electric-car-landing-page",
@@ -33,7 +33,7 @@ const otherProjects = [
     title: "HTML-CSS Quiz",
     image: "../images/projects/html_css-quiz.png",
     description:
-      "Simple quiz about HTML and CSS. The user can choose between the answers.",
+      "Simple quiz about HTML and CSS. I practiced using ARIA attributes and design best practices. The user can choose between the answers.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/HTML-CSS-Quiz/",
     githubUrl: "https://github.com/virag-ky/HTML-CSS-Quiz",
@@ -42,7 +42,8 @@ const otherProjects = [
   {
     title: "Magazine",
     image: "../images/projects/magazine.png",
-    description: "This is a sample magazine project, made with Grid layout.",
+    description:
+      "This is a static sample magazine project, made with Grid layout.",
     languagesTools: ["HTML", "CSS", "Grid", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Magazine/",
     githubUrl: "https://github.com/virag-ky/Magazine",
@@ -51,7 +52,8 @@ const otherProjects = [
   {
     title: "Nutrition Label",
     image: "../images/projects/nutrition-label.png",
-    description: "Nutrition label project, inspired by freeCodeCamp's lesson.",
+    description:
+      "Nutrition label project, which I built after I finished freeCodeCamp's typography lesson, where I learned how to style text and adjust line heights.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Nutrition-Label/",
     githubUrl: "https://github.com/virag-ky/Nutrition-Label",
@@ -61,7 +63,7 @@ const otherProjects = [
     title: "Odin Recipes",
     image: "../images/projects/recipe-page.png",
     description:
-      "Recipe website project from the Odin Project. The user can navigate between the homepage and 3 additional recipe pages.",
+      "Recipe website project from the Odin Project. The user can navigate between the homepage and 3 additional recipe pages. The links are in the footer section.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Odin-Recipes/",
     githubUrl: "https://github.com/virag-ky/Odin-Recipes",
@@ -71,7 +73,7 @@ const otherProjects = [
     title: "Registration Form",
     image: "../images/projects/registration-form.png",
     description:
-      "A simple registration form, inspired by freeCodeCamp's lesson.",
+      "A simple static registration form, where I practiced using form elements with the type text, number, email, password, radio buttons, checkbox, file upload, dropdown selection and textarea.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Registration-Form/",
     githubUrl: "https://github.com/virag-ky/Registration-Form",
@@ -80,7 +82,8 @@ const otherProjects = [
   {
     title: "Tribute Page - Marilyn Monroe",
     image: "../images/projects/tribute-page.png",
-    description: "Tribute page project of Marilyn Monroe.",
+    description:
+      "Tribute page project of Marilyn Monroe. This was one of the final projects from freeCodeCamp's Responsive Web Design course.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Tribute-page--Marilyn_Monroe/",
     githubUrl: "https://github.com/virag-ky/Tribute-page--Marilyn_Monroe",
@@ -89,7 +92,8 @@ const otherProjects = [
   {
     title: "Technical Documentation Page",
     image: "../images/projects/technical-documentation-page.png",
-    description: "JavaScript documentation page project.",
+    description:
+      "JavaScript documentation page project. This project was also a final project from freeCodeCamp's Responsive Web Design course.",
     languagesTools: ["HTML", "CSS", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Technical_documentation_page/",
     githubUrl: "https://github.com/virag-ky/Technical_documentation_page",
