@@ -28,3 +28,6 @@
 - GitHub: [@virag-ky](https://github.com/virag-ky)
 - Twitter: [@Virag_Ky](https://twitter.com/Virag_Ky)
 - LinkedIn: [virag-kormoczy](https://linkedin.com/in/virag-kormoczy)
+
+## Acknowledgements
+* the background images are from Canva (available for pro users)
