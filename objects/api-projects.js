@@ -17,7 +17,7 @@ const apiProjects = [
     languagesTools: ["HTML", "Sass", "JavaScript", "API", "Grid", "Flexbox"],
     liveUrl: "https://virag-ky.github.io/Cocktails/",
     githubUrl: "https://github.com/virag-ky/Cocktails",
-    id: 2,
+    id: 25,
   },
 ];
 

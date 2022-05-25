@@ -716,6 +716,11 @@ main #projects #main-div .project #image-9 {
      object-position: 8%;
 }
 
+main #projects #main-div .project #image-25 {
+  -o-object-position: left;
+     object-position: left;
+}
+
 main #projects #main-div .project h3 {
   font-family: "Space Mono", monospace;
   font-size: 1.5rem;
