@@ -39,6 +39,15 @@ const toolProjects = [
     githubUrl: "https://github.com/virag-ky/Library-Odin-Project",
     id: 23,
   },
+  {
+    title: "Clock",
+    image: "images/clock.png",
+    description: "A clock mini-project, displaying the current time.",
+    languagesTools: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://virag-ky.github.io/Clock/",
+    githubUrl: "https://github.com/virag-ky/Clock",
+    id: 28,
+  },
 ];
 
 export default toolProjects;
