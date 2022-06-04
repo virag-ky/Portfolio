@@ -1,5 +1,15 @@
 const otherProjects = [
   {
+    title: "NFT Card",
+    image: "images/nft_card.png",
+    description:
+      "This is a solution to the NFT preview card component challenge on Frontend Mentor.",
+    languagesTools: ["HTML", "CSS", "Flexbox"],
+    liveUrl: "https://virag-ky.github.io/NFT-Preview-Card-Component/",
+    githubUrl: "https://github.com/virag-ky/NFT-Preview-Card-Component",
+    id: 33,
+  },
+  {
     title: "Order Summary Card",
     image: "images/order_summary.png",
     description:
