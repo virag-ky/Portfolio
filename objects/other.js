@@ -1,5 +1,15 @@
 const otherProjects = [
   {
+    title: "QR Code Card",
+    image: "images/qr_code_card.png",
+    description:
+      "This is a solution to the QR code component challenge on Frontend Mentor.",
+    languagesTools: ["HTML", "CSS", "Flexbox"],
+    liveUrl: "https://virag-ky.github.io/QR-Code-Frontend-Mentor/",
+    githubUrl: "https://github.com/virag-ky/QR-Code-Frontend-Mentor",
+    id: 34,
+  },
+  {
     title: "NFT Card",
     image: "images/nft_card.png",
     description:
