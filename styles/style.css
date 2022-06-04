@@ -14,26 +14,14 @@ body {
   overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  * {
-    scroll-behavior: smooth;
-  }
-}
-
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
   background: #0c002e;
 }
 
 @media (max-width: 600px) {
   ::-webkit-scrollbar {
     width: 10px;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 1299px) {
-  ::-webkit-scrollbar {
-    width: 15px;
   }
 }
 
@@ -605,7 +593,7 @@ main #projects #main-div {
       align-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  width: 90vw;
+  width: 85vw;
   max-width: 1800px;
   margin-bottom: 200px;
 }
@@ -665,8 +653,8 @@ main #projects #main-div .project {
 }
 
 main #projects #main-div .project img {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;

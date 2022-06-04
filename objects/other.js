@@ -1,5 +1,15 @@
 const otherProjects = [
   {
+    title: "FAQ Accordion Card",
+    image: "images/faq_accordion_card.png",
+    description:
+      "This is a solution to the FAQ accordion card challenge on Frontend Mentor.",
+    languagesTools: ["HTML", "Sass", "JavaScript"],
+    liveUrl: "https://virag-ky.github.io/FAQ-Accordion-Card/",
+    githubUrl: "https://github.com/virag-ky/FAQ-Accordion-Card",
+    id: 30,
+  },
+  {
     title: "3-Column Preview Card Component",
     image: "images/3_column_preview.png",
     description:
