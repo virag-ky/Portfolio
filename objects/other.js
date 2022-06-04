@@ -1,5 +1,25 @@
 const otherProjects = [
   {
+    title: "Order Summary Card",
+    image: "images/order_summary.png",
+    description:
+      "This is a solution to the Order summary card challenge on Frontend Mentor.",
+    languagesTools: ["HTML", "CSS", "Flexbox"],
+    liveUrl: "https://virag-ky.github.io/Order-Summary-Component/",
+    githubUrl: "https://github.com/virag-ky/Order-Summary-Component",
+    id: 32,
+  },
+  {
+    title: "Stats Preview Card",
+    image: "images/stats_preview_card.png",
+    description:
+      "This is a solution to the Stats preview card component challenge on Frontend Mentor.",
+    languagesTools: ["HTML", "CSS", "Flexbox"],
+    liveUrl: "https://virag-ky.github.io/Stats-Preview-Card/",
+    githubUrl: "https://github.com/virag-ky/Stats-Preview-Card",
+    id: 31,
+  },
+  {
     title: "FAQ Accordion Card",
     image: "images/faq_accordion_card.png",
     description:
