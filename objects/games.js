@@ -1,6 +1,6 @@
 const gameProjects = [
   {
-    title: "Etch-a-Sketch",
+    title: "Tic-Tac-Toe",
     image: "images/tic_tac_toe.png",
     description:
       "A simple and easy Tic-Tac-Toe game. The user is playing against the computer. The user can choose between the marks and after clicking the 'Start Game' button, the game begins.",
