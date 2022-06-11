@@ -1,5 +1,23 @@
 const apiProjects = [
   {
+    title: "Fresh Cuisine",
+    image: "images/restaurant1.png",
+    description:
+      "This restaurant project is a SPA (single-page application) website. The user can navigate between the home, menu and contact page. I used the MealDB API to display some menu items.",
+    languagesTools: [
+      "HTML",
+      "Sass",
+      "JavaScript",
+      "API",
+      "Grid",
+      "Flexbox",
+      "Webpack",
+    ],
+    liveUrl: "https://virag-ky.github.io/Restaurant-Website/",
+    githubUrl: "https://github.com/virag-ky/Restaurant-Website",
+    id: 35,
+  },
+  {
     title: "Free-To-Play Games",
     image: "images/freetoplaygames.png",
     description:

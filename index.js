@@ -43,7 +43,7 @@ const createProjects = (currentProjects) => {
   }
 };
 
-createProjects(gameProjects);
+createProjects(apiProjects);
 
 const seeProjects = (currentProject) => {
   const seeProjectBtn = [...document.querySelectorAll(".see-project")];
@@ -90,7 +90,7 @@ const seeProjects = (currentProject) => {
     })
   );
 };
-seeProjects(gameProjects);
+seeProjects(apiProjects);
 
 projectsNavbar.forEach((item) =>
   item.addEventListener("click", (e) => {
@@ -120,7 +120,7 @@ projectsNavbar.forEach((item) =>
         seeProjects(apiProjects);
         break;
       default:
-        createProjects(gameProjects);
+        createProjects(apiProjects);
     }
   })
 );
