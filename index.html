@@ -109,7 +109,11 @@
                 <input
                   type="text"
                   name="name"
+                  id="name"
                   placeholder="Enter your name..."
+                  required
+                  pattern="[A-Za-z\s]+"
+                  maxlength="20"
                 />
               </label>
               <label>
@@ -119,6 +123,7 @@
                   name="email"
                   id="email"
                   placeholder="Enter your email..."
+                  required
                 />
               </label>
             </fieldset>
@@ -127,17 +132,11 @@
               <textarea
                 name="message"
                 placeholder="Type your message..."
+                minlength="5"
+                maxlength="160"
+                required
               ></textarea>
             </label>
-            <small class="small hidden show" id="uppercase-email"
-              >Please, enter valid email: lower case only.</small
-            >
-            <small class="small hidden show" id="empty-email"
-              >Please, enter your email.</small
-            >
-            <small class="small hidden show" id="empty-textarea"
-              >Please, type a message.</small
-            >
             <button type="submit" id="submit">Send</button>
           </form>
         </div>
