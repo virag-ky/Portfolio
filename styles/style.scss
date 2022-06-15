@@ -24,34 +24,17 @@
   background: #f65ee0;
 }
 
-#menu {
-  display: none;
-
-  @include media-sx {
-    display: block;
-    color: #fff;
-    font-size: 1.8rem;
-    padding: 20px 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-    z-index: 99;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
-
 #side-nav {
   @include center;
 
   @include media-sx {
     position: absolute;
-    left: -200px;
-    width: 15%;
-    padding: 15px 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    max-width: unset;
+    padding: 40px 0;
   }
 
   @include media-sm {
@@ -74,7 +57,7 @@
     width: 100%;
 
     @include media-sx {
-      width: 70%;
+      display: none;
     }
   }
 
@@ -82,7 +65,8 @@
     @include center;
 
     @include media-sx {
-      height: 45%;
+      flex-direction: row;
+      width: 50%;
     }
 
     width: 100%;
@@ -114,16 +98,6 @@
       }
     }
   }
-}
-
-#side-nav.hidden {
-  position: fixed;
-  left: 0;
-}
-
-#menu.slide {
-  position: fixed;
-  left: 20%;
 }
 
 header {
@@ -382,6 +356,7 @@ main {
         grid-template-columns: 1fr;
         width: 90vw;
         max-width: 500px;
+
       }
 
       .project {
@@ -639,8 +614,9 @@ main {
           font-weight: 700;
 
           @include media-sx {
-            width: 30%;
+            width: 25%;
             font-size: 1rem;
+            padding: 8px 0;
           }
 
           &:hover {
@@ -702,11 +678,11 @@ main {
     }
 
     i {
-      font-size: 3rem;
+      font-size: 2.5rem;
       color: #fff;
 
       @include media-sx {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
 
       @include media-sm {
@@ -810,19 +786,4 @@ main {
 
 .margin-zero {
   margin-left: 0;
-}
-
-.small.hidden {
-  display: none;
-}
-
-.small.show {
-  color: red;
-  font-family: $font2;
-  font-weight: 700;
-  font-size: 1.2rem;
-
-  @include media-sx {
-    font-size: 1rem;
-  }
 }

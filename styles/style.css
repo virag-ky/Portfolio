@@ -41,28 +41,6 @@ body {
   background: #f65ee0;
 }
 
-#menu {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  #menu {
-    display: block;
-    color: #fff;
-    font-size: 1.8rem;
-    padding: 20px 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    z-index: 99;
-  }
-  #menu:hover {
-    cursor: pointer;
-  }
-}
-
 #side-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,9 +73,12 @@ body {
 @media (max-width: 600px) {
   #side-nav {
     position: absolute;
-    left: -200px;
-    width: 15%;
-    padding: 15px 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    max-width: unset;
+    padding: 40px 0;
   }
 }
 
@@ -114,7 +95,7 @@ body {
 
 @media (max-width: 600px) {
   #side-nav #profile {
-    width: 70%;
+    display: none;
   }
 }
 
@@ -141,7 +122,11 @@ body {
 
 @media (max-width: 600px) {
   #side-nav ul {
-    height: 45%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50%;
   }
 }
 
@@ -172,16 +157,6 @@ body {
   #side-nav ul li a i {
     font-size: 2rem;
   }
-}
-
-#side-nav.hidden {
-  position: fixed;
-  left: 0;
-}
-
-#menu.slide {
-  position: fixed;
-  left: 20%;
 }
 
 header {
@@ -1043,8 +1018,9 @@ main #contact div form #submit {
 
 @media (max-width: 600px) {
   main #contact div form #submit {
-    width: 30%;
+    width: 25%;
     font-size: 1rem;
+    padding: 8px 0;
   }
 }
 
@@ -1123,13 +1099,13 @@ main #contact div form #submit:hover {
 }
 
 .popup .exit i {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #fff;
 }
 
 @media (max-width: 600px) {
   .popup .exit i {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1258,26 +1234,5 @@ main #contact div form #submit:hover {
 
 .margin-zero {
   margin-left: 0;
-}
-
-.small.hidden {
-  display: none;
-}
-
-.small.show {
-  color: red;
-  font-family: "Mulish", sans-serif;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
-@media (max-width: 600px) {
-  .small.show {
-    font-size: 1rem;
-  }
-}
-
-input:invalid {
-  border: solid red;
 }
 /*# sourceMappingURL=style.css.map */
