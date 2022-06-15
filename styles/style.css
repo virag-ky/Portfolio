@@ -1276,4 +1276,8 @@ main #contact div form #submit:hover {
     font-size: 1rem;
   }
 }
+
+input:invalid {
+  border: solid red;
+}
 /*# sourceMappingURL=style.css.map */
