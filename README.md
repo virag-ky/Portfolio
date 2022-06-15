@@ -11,8 +11,9 @@
 * JavaScript
 
 ## Screenshot
+![Screenshot from 2022-06-15 19-24-22](https://user-images.githubusercontent.com/79658534/173877688-3fd83fc6-7a58-4d97-8804-2a16246aeca8.png)
 
-![Screenshot from 2022-05-14 21-04-22](https://user-images.githubusercontent.com/79658534/168465941-3d5608e4-e4c7-4c06-8acf-c6a27510f9e5.png)
+
 
 ### Live Site URL: https://virag-ky.github.io/Portfolio/
 
